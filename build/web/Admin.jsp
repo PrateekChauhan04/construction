@@ -9,7 +9,7 @@ Admin
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title> Admin  </title>
+        <title> Admin pr  </title>
         <style>
             
         #container{
