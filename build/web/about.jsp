@@ -3,7 +3,7 @@
     Created on : Jun 29, 2019, 12:21:34 PM
     Author     : Payal Chauhan
 --%>
-
+<%@page import="java.sql.ResultSet"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -53,5 +53,12 @@
        
 <script src="jquery.js"></script>
 <script src="bootstrap.min.js"></script>
+
+                        <%-- Comments section code --%>
+
+
+                        <%-- Comments section Ends --%>
+
+
 </body>
 </html>
