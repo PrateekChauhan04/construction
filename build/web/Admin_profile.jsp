@@ -41,20 +41,62 @@
                 
                 }
         </style>
+        <script>
+            function showprojects(){
+                
+                document.location.href='showprojects.jsp';
+            }
+            function addprojects(){
+                
+                document.location.href='addprojects.jsp';
+            }
+            function updateprojects(){
+                
+                document.location.href='updateprojects.jsp';
+            }
+            function deleteprojects(){
+                
+                document.location.href='deleteprojects.jsp';
+            }
+            function viewinquiry(){
+                
+                document.location.href='viewinquiry.jsp';
+            }
+             function currentproject(){
+                
+                document.location.href='currentproject.jsp';
+            }
+             function completeproject(){
+                
+                document.location.href='completeproject.jsp';
+            }
+            
+            
+            
+            
+            
+            
+            </script>
     </head>
     <body>
         <div id='container'>
              
 <h1 id="heading" >Admin Profile</h1>
 <form>
-    <input id="btn" type="submit" value="Show projects" name="show_projects" >
+    <input id="btn" type="button" value="Show projects" onclick="showprojects()">
+    <input id="btn" type="button" value="Add projects" onclick="addprojects()">
+    <input id="btn" type="button" value="update projects" onclick="updateprojects()">
+    <input id="btn" type="button" value="delete projects" onclick="deleteprojects()">
+    <input id="btn" type="button" value="view inquiry" onclick="viewinquiry()">
+   <input id="btn" type="button" value="currentproject" onclick="currentproject()">
+   <input id="btn" type="button" value="completeproject" onclick="completeproject()">
 </form>   
 <% 
 if(request.getParameter("show_projects")!=null)
 {
- util.SqlUtil.connectDb();
+ util.sqlutil.connectDb();
  String Query="Select * from p_details";
-ResultSet rs=util.SqlUtil.fetch(Query);
+ResultSet rs=util.sqlutil.read(Query);
 while(rs.next())
 {
 String P_name=rs.getString("P_name");

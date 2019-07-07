@@ -37,8 +37,8 @@
           Projects
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="currentp.jsp">Current Projects</a>
-          <a class="dropdown-item" href="completed.jsp">Completed Projects</a>
+          <a class="dropdown-item" href="currentproject.jsp">Current Projects</a>
+          <a class="dropdown-item" href="completeproject.jsp">Completed Projects</a>
         </div>
       </li>
       <li class="nav-item">
