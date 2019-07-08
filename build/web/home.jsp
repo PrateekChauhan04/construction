@@ -10,12 +10,15 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Straight Line</title>
+<link  rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
     </head>
-    <body style="background-color: #E0E0E0">
+    <body style="background-color: white">
+
         <!--Navigation bar -->
-        <div class="col-lg-12" style="top: 30px;">
+        
+        <div class="col-lg-12">
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <a class="navbar-brand" href="home.jsp">Straight Line</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -88,5 +91,6 @@
 </div>
 <script src="jquery.js"></script>
 <script src="bootstrap.min.js"></script>
+<script src="https://kit.fontawesome.com/6298262658.js"></script>
 </body>
 </html>
