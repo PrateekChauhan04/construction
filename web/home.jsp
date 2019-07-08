@@ -86,7 +86,9 @@
 </div>
 </div>
 </div>
-<script src="jquery.js"></script>
+<!--        hello-->
+
+        <script src="jquery.js"></script>
 <script src="bootstrap.min.js"></script>
 </body>
 </html>
