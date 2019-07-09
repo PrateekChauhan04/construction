@@ -10,16 +10,17 @@ package util;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.sql.Statement;
 
 /**
  *
  * @author NEO
  */
-public class sqlutil {
+public class SqlUtil {
     private static final String DBURL="jdbc:mysql://localhost:3306/";
     private static final String DBUSER="root";
-    private static final String DBPASS="Gaurav";
+    private static final String DBPASS="prateek";
     private static final String Driver="com.mysql.jdbc.Driver";
     private static final String DBNAME="construction";
     static Connection conn;
@@ -33,7 +34,7 @@ try{
     
 
 
-}catch(Exception ex){
+}catch(ClassNotFoundException | SQLException ex){
     System.out.println("problem in creation"+ex);
 }
 
@@ -46,7 +47,7 @@ connectDb();
 
 }
 st.execute(query);
-}catch(Exception ex){
+}catch(SQLException ex){
     System.out.println("problem in tablecreation"+ex);
 }
 
@@ -61,7 +62,7 @@ connectDb();
 st.executeUpdate(query);
 
 }
-catch(Exception ex){
+catch(SQLException ex){
 
             System.out.println("problem in Updation"+ex);
 }
@@ -76,7 +77,7 @@ catch(Exception ex){
             connectDb();
         }
        rs= st.executeQuery(query);
-        }catch(Exception ex)
+        }catch(SQLException ex)
         {
             System.out.println("Problem reading data "+ex);
         }
@@ -91,7 +92,7 @@ catch(Exception ex){
         st.close();
         }
     }
-    catch(Exception ex)
+    catch(SQLException ex)
     {
         System.out.println("Problem "+ex);
     }

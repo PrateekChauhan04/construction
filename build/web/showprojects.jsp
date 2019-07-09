@@ -5,7 +5,7 @@
 --%>
 
 <%@page import="java.sql.ResultSet"%>
-<%@page import="util.sqlutil"%>
+<%@page import="util.SqlUtil"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -19,10 +19,10 @@
               
                
                    try{
-                        sqlutil.connectDb();
+                        SqlUtil.connectDb();
                   
                         String query="select * from projects";
-                        ResultSet rs=sqlutil.read(query);
+                        ResultSet rs=SqlUtil.read(query);
                       %>
                        
 

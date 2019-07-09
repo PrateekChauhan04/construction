@@ -4,7 +4,7 @@
     Author     : NEO
 --%>
 
-<%@page import="util.sqlutil"%>
+<%@page import="util.SqlUtil"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -25,9 +25,7 @@
            <input type="Date"  name="date">
             <br>
             <input type="submit" value="add" name="btn">
-            <br>
-                  
-                     
+            <br>          
         </form>
         <%! int sid; String project_name,status,loctaion,date;%>
         <% if(request.getParameter("btn")!=null){
@@ -38,39 +36,13 @@
         loctaion=  request.getParameter("loc");
         date=request.getParameter("date");
         
-        try{
-            sqlutil.connectDb();
+        try{ SqlUtil.connectDb();
           String query ="insert into projects values("+sid+",'"+project_name+"','"+status +"','"+loctaion+"','"+date+"')";  
-        sqlutil.Updatetable(query);
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+        SqlUtil.Updatetable(query);
         }catch(Exception ex){
         System.out.println("erro in inserting");
-        
         }
-        
-        
-        
         }
-        
-        
-        
-        
-        
-        
-        
-        
-        
         %>
     </body>
 </html>

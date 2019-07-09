@@ -3,7 +3,7 @@ Admin
 --%>
 
 <%@page import="java.sql.ResultSet"%>
-<%@page import="util.sqlutil"%>
+<%@page import="util.SqlUtil"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -69,12 +69,12 @@ Admin
          String password=request.getParameter("pass");
          System.out.println(email+" "+password);
            try{
-               sqlutil.connectDb();
+               SqlUtil.connectDb();
               String query="create table if not exists projects(sno int,projectname varchar(100),status varchar(100),location varchar(200),year date)";
                String query1="select * from login where Email='"+email+"' and password='"+password+"' "; 
-               sqlutil.createTable(query);
+               SqlUtil.createTable(query);
                
-               ResultSet rs=sqlutil.read(query1);
+               ResultSet rs=SqlUtil.read(query1);
                 if(rs.next())
                 {
                     response.sendRedirect("Admin_profile.jsp");

@@ -94,9 +94,9 @@
 <% 
 if(request.getParameter("show_projects")!=null)
 {
- util.sqlutil.connectDb();
+ util.SqlUtil.connectDb();
  String Query="Select * from p_details";
-ResultSet rs=util.sqlutil.read(Query);
+ResultSet rs=util.SqlUtil.read(Query);
 while(rs.next())
 {
 String P_name=rs.getString("P_name");

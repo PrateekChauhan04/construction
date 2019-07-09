@@ -5,7 +5,7 @@
 --%>
 
 <%@page import="java.sql.ResultSet"%>
-<%@page import="util.sqlutil"%>
+<%@page import="util.SqlUtil"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -19,10 +19,10 @@
               
                
                    try{
-                        sqlutil.connectDb();
+                        SqlUtil.connectDb();
                   
                         String query="select * from projects where status='complete'";
-                        ResultSet rs=sqlutil.read(query);
+                        ResultSet rs=SqlUtil.read(query);
                       %>
                        
 
@@ -46,14 +46,8 @@
                      status= rs.getString("status");
                      location = rs.getString("location");
                      year= rs.getString("year");
-                     
-                                 
+                                  
                      %>            
-                     
-                     
-                     
-                     
-
                                 <tr>
                
                                     <td><%=sno %></td>
@@ -61,32 +55,15 @@
                                     <td><%=status %></td>
                                     <td><%=location %></td>
                                     <td><%=year %></td>
-                                    
-                                                   
-                                         
-                                        
-                                    
+                                  
                                 </tr>
-                                
-                            
-                   
-                        
                    
                         <%}%>
                         </table></div>
                         <% }catch(Exception ex){
                    
                    System.out.println("problem"+ex);
-                   }
-                
-                   
-                   
-               
-               
-        
-        
-        
-        
+}
         %>  
     </body>
 </html>
