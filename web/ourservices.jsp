@@ -13,6 +13,7 @@
     </head>
      <body style="background-color: #E0E0E0">
         <!--Navigation bar -->
+        <div class="container-fluid" style="background-color: #343a40; position: relative; ">
         <div class="col-lg-12">
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <a class="navbar-brand" href="home.jsp">Straight Line</a>
@@ -49,6 +50,7 @@
   </div>
 </nav> 
 </div>
+        </div>
         
 <script src="jquery.js"></script>
 <script src="bootstrap.min.js"></script>

@@ -1,9 +1,3 @@
-<%-- 
-    Document   : currentproject
-    Created on : Jul 7, 2019, 9:50:32 PM
-    Author     : NEO
---%>
-
 <%@page import="java.sql.ResultSet"%>
 <%@page import="util.SqlUtil"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -26,7 +20,7 @@
                       %>
                        
 
-                      <div style="    background: aliceblue;
+                      <div style=" background: aliceblue;
     font-size: 14px;"><table border="1">
                             
                                 <tr>

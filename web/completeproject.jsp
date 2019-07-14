@@ -1,8 +1,4 @@
-<%-- 
-    Document   : completeproject
-    Created on : Jul 7, 2019, 9:50:18 PM
-    Author     : NEO
---%>
+
 
 <%@page import="java.sql.ResultSet"%>
 <%@page import="util.SqlUtil"%>

@@ -1,9 +1,4 @@
 
-<%-- 
-    Document   : demo
-    Created on : Jul 5, 2019, 6:46:15 PM
-    Author     : NEO
---%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -13,11 +8,37 @@
         <title>Straight Line</title>
 
 <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+<style>
+      a:link {
+  color: whitesmoke;
+text-decoration: none;
+      }
+
+/* visited link */
+a:visited {
+  text-decoration: none;
+    color: white;
+}
+
+/* mouse over link */
+a:hover {
+  text-decoration: none;
+    color: orange;
+}
+"
+</style>
     </head>
-    <body style="background-color: #E0E0E0">
+    <body data-spy="scroll" data-target=".navbar" data-offset="50">
+      
+        
+        
+        
+        
+        
         <!--Navigation bar -->
+        <div class="container-fluid" style="background-color: #343a40; position: relative; ">
         <div class="col-lg-12">
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-between ">
   <a class="navbar-brand" href="home.jsp">Straight Line</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -47,11 +68,21 @@
       </li>
        <li class="nav-item">
         <a class="nav-link" href="contact.jsp">Contact Us</a>
-      </li>
-    </ul>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link" href="Admin.jsp">Admin Login</a>
+       </li>
+    </ul>      
   </div>
 </nav> 
 </div>
+        </div>
+        
+        
+        
+        
+        
+        
         <!-- Carousel -->
         <div class="container" style="width: 65%;height: 70%; position: relative; top: 50px; left: center;">
             <div class="row">
@@ -87,9 +118,32 @@
 </div>
 </div>
 </div>
-<!--        hello-->
-<!--        hello-->
-        <script src="jquery.js"></script>
+        
+        
+        
+        
+        
+        
+<!--  Footer  -->
+
+    <div class="col-lg-12 container-fluid" style="background-color: black;
+    width: 100%;
+    max-height:400px;
+    padding-left:17%;
+    top: 112px;">
+        
+        <p><h6 style="color:white">Quick Links</h6></p>
+        <p><a href="home.jsp" target="_blank" style="">>Home</a></p>
+        <p><a href="ourservices.jsp" target="_blank">>Our Services</a></p>
+        <p><a href="ourvision.jsp" target="_blank">>Our Vision</a></p>
+        <p><a href="about.jsp" target="_blank">>About Us</a></p>
+        <p><a href="contact.jsp" target="_blank">>Contact Us</a></p>
+        
+        
+       
+
+<script src="jquery.js"></script>
 <script src="bootstrap.min.js"></script>
+<script src="https://kit.fontawesome.com/6298262658.js"></script>
 </body>
 </html>
