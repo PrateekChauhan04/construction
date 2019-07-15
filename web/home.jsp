@@ -10,7 +10,7 @@
 <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
 <style>
       a:link {
-  color: whitesmoke;
+  color: grey;
 text-decoration: none;
       }
 
@@ -31,9 +31,14 @@ p.borderfotter{
     border-bottom-color: white;
     border-width: 1px;
 }
+body {
+  background-image: url("blur1.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
 </style>
     </head>
-    <body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <body>
       
         
         
@@ -151,7 +156,7 @@ p.borderfotter{
         <div class="col" style="background-color: black;
     width: 100%;
     max-height:400px;
-    padding-left:17%;
+    padding-left:14%;
     top: 112px;
     position: relative;
     color: white;">
@@ -165,12 +170,12 @@ p.borderfotter{
         <div class="col" style="background-color: black;
     width: 100%;
     max-height:400px;
-    padding-left:17%;
+    padding-left:10%;
     top: 112px;
     position: relative;
     color: white;">
         
-            <p><h6>Call Us :</h6></p> 
+            <p><h6><i class="fas fa-phone-square-alt"></i>&nbsp;Call Us :</h6></p> 
         <p>+91 95892 31112</p>
         <p>+91 87188 16333</p>
         <p class="borderfotter">0731-497 9346</p>
@@ -179,11 +184,11 @@ p.borderfotter{
         <div class="col" style="background-color: black;
     width: 100%;
     max-height:400px;
-    padding-left:17%;
+    padding-left:10%;
     top: 112px;
     position: relative;
     color: white;">
-            <p><h6>Email:</h6></p> 
+            <p><h6><i class="far fa-envelope"></i>&nbsp;Email:</h6></p> 
             <p>info@onessinfra.com</p>
 
             <p>onessinfra@gmail.com</p>
@@ -199,7 +204,7 @@ p.borderfotter{
     position: relative;
     color: white;">
             
-            <p style="padding-left: 20%;">@2017 Copyright Straight Line Pvt. Ltd. Indore &nbsp;&nbsp; &nbsp;&nbsp;    | &nbsp;&nbsp; &nbsp;&nbsp;      Design by Gaurav websoft.</p>
+            <p style="padding-left: 15%;">@2019 Copyright Straight Line Pvt. Ltd. Nagpur &nbsp;&nbsp; &nbsp;&nbsp;|&nbsp;&nbsp; &nbsp;&nbsp;Designed by <a href="https://www.facebook.com">ProgrammersDoor</a> </p>
         </div>
         
 </div>

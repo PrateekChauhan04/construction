@@ -51,6 +51,82 @@
 </nav> 
 </div>
         </div>
+               
+<!--  Footer  -->
+<div class="container-fluid">
+    <div class="row"> 
+        <div class="col" style="background-color: black;
+    width: 100%;
+    max-height:400px;
+    padding-left:73px;
+    top: 112px;
+    position: relative;">
+        
+        <p><h6 style="color:white">Quick Links</h6></p>
+    <p class="borderfotter"><a href="home.jsp" target="_blank">>Home</a></p>
+        <p class="borderfotter"><a href="ourservices.jsp" target="_blank">>Our Services</a></p>
+        <p class="borderfotter"><a href="ourvision.jsp" target="_blank">>Our Vision</a></p>
+        <p class="borderfotter"><a href="about.jsp" target="_blank">>About Us</a></p>
+        <p class="borderfotter"><a href="contact.jsp" target="_blank">>Contact Us</a></p>
+        
+        
+        </div>
+        <div class="col" style="background-color: black;
+    width: 100%;
+    max-height:400px;
+    padding-left:14%;
+    top: 112px;
+    position: relative;
+    color: white;">
+            <p><h6>CONTACT WITH ME</h6></p>
+        <p>211,Princess Business Skyline,</p>
+        <p>A.B. Road Scheme No.54,</p>
+        <p class="borderfotter">Sheetal Nagar Indore,MP(452010)</p>
+            
+            
+        </div>
+        <div class="col" style="background-color: black;
+    width: 100%;
+    max-height:400px;
+    padding-left:10%;
+    top: 112px;
+    position: relative;
+    color: white;">
+        
+            <p><h6><i class="fas fa-phone-square-alt"></i>&nbsp;Call Us :</h6></p> 
+        <p>+91 95892 31112</p>
+        <p>+91 87188 16333</p>
+        <p class="borderfotter">0731-497 9346</p>
+        
+        </div> 
+        <div class="col" style="background-color: black;
+    width: 100%;
+    max-height:400px;
+    padding-left:10%;
+    top: 112px;
+    position: relative;
+    color: white;">
+            <p><h6><i class="far fa-envelope"></i>&nbsp;Email:</h6></p> 
+            <p>info@onessinfra.com</p>
+
+            <p>onessinfra@gmail.com</p>
+
+            
+        </div>
+        
+        <div class="col" style="background-color: black;
+    width: 100%;
+    max-height:400px;
+    padding-left:17%;
+    top: 112px;
+    position: relative;
+    color: white;">
+            
+            <p style="padding-left: 15%;">@2019 Copyright Straight Line Pvt. Ltd. Nagpur &nbsp;&nbsp; &nbsp;&nbsp;|&nbsp;&nbsp; &nbsp;&nbsp;Designed by <a href="https://www.facebook.com">ProgrammersDoor</a> </p>
+        </div>
+        
+</div>
+</div>
      
 <script src="jquery.js"></script>
 <script src="bootstrap.min.js"></script>
