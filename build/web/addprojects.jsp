@@ -16,13 +16,18 @@
         <form>
             <input type="number" placeholder="enter serial number" name="sid">
             <br>
+            <br>
             <input type="text" placeholder="enter projectname" name="p_name">
+            <br>
             <br>
             <input type="text" placeholder="enter status" name="status">
             <br>
+            <br>
             <input type="text" placeholder="enter loctation" name="loc">
             <br>
+            <br>
            <input type="Date"  name="date">
+            <br>
             <br>
             <input type="submit" value="add" name="btn">
             <br>          

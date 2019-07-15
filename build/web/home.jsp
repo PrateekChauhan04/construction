@@ -25,7 +25,12 @@ a:hover {
   text-decoration: none;
     color: orange;
 }
-"
+p.borderfotter{
+    border-bottom-style: solid;
+   padding-bottom: 12px;
+    border-bottom-color: white;
+    border-width: 1px;
+}
 </style>
     </head>
     <body data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -125,23 +130,80 @@ a:hover {
         
         
 <!--  Footer  -->
-
-    <div class="col-lg-12 container-fluid" style="background-color: black;
+<div class="container-fluid">
+    <div class="row"> 
+        <div class="col" style="background-color: black;
+    width: 100%;
+    max-height:400px;
+    padding-left:73px;
+    top: 112px;
+    position: relative;">
+        
+        <p><h6 style="color:white">Quick Links</h6></p>
+    <p class="borderfotter"><a href="home.jsp" target="_blank">>Home</a></p>
+        <p class="borderfotter"><a href="ourservices.jsp" target="_blank">>Our Services</a></p>
+        <p class="borderfotter"><a href="ourvision.jsp" target="_blank">>Our Vision</a></p>
+        <p class="borderfotter"><a href="about.jsp" target="_blank">>About Us</a></p>
+        <p class="borderfotter"><a href="contact.jsp" target="_blank">>Contact Us</a></p>
+        
+        
+        </div>
+        <div class="col" style="background-color: black;
     width: 100%;
     max-height:400px;
     padding-left:17%;
-    top: 112px;">
+    top: 112px;
+    position: relative;
+    color: white;">
+            <p><h6>CONTACT WITH ME</h6></p>
+        <p>211,Princess Business Skyline,</p>
+        <p>A.B. Road Scheme No.54,</p>
+        <p class="borderfotter">Sheetal Nagar Indore,MP(452010)</p>
+            
+            
+        </div>
+        <div class="col" style="background-color: black;
+    width: 100%;
+    max-height:400px;
+    padding-left:17%;
+    top: 112px;
+    position: relative;
+    color: white;">
         
-        <p><h6 style="color:white">Quick Links</h6></p>
-        <p><a href="home.jsp" target="_blank" style="">>Home</a></p>
-        <p><a href="ourservices.jsp" target="_blank">>Our Services</a></p>
-        <p><a href="ourvision.jsp" target="_blank">>Our Vision</a></p>
-        <p><a href="about.jsp" target="_blank">>About Us</a></p>
-        <p><a href="contact.jsp" target="_blank">>Contact Us</a></p>
+            <p><h6>Call Us :</h6></p> 
+        <p>+91 95892 31112</p>
+        <p>+91 87188 16333</p>
+        <p class="borderfotter">0731-497 9346</p>
         
-        
-       
+        </div> 
+        <div class="col" style="background-color: black;
+    width: 100%;
+    max-height:400px;
+    padding-left:17%;
+    top: 112px;
+    position: relative;
+    color: white;">
+            <p><h6>Email:</h6></p> 
+            <p>info@onessinfra.com</p>
 
+            <p>onessinfra@gmail.com</p>
+
+            
+        </div>
+        
+        <div class="col" style="background-color: black;
+    width: 100%;
+    max-height:400px;
+    padding-left:17%;
+    top: 112px;
+    position: relative;
+    color: white;">
+            
+            <p style="padding-left: 20%;">@2017 Copyright Straight Line Pvt. Ltd. Indore &nbsp;&nbsp; &nbsp;&nbsp;    | &nbsp;&nbsp; &nbsp;&nbsp;      Design by Gaurav websoft.</p>
+        </div>
+        
+</div>
+</div>
 <script src="jquery.js"></script>
 <script src="bootstrap.min.js"></script>
 <script src="https://kit.fontawesome.com/6298262658.js"></script>
