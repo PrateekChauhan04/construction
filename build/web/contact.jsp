@@ -133,7 +133,7 @@ p.borderfotter{
             <p><h6><i class="far fa-envelope"></i>&nbsp;Email:</h6></p> 
             <p>info@onessinfra.com</p>
 
-            <p>onessinfra@gmail.com</p>
+            <p class="borderfotter">onessinfra@gmail.com</p>
 
             
         </div>
@@ -154,5 +154,6 @@ p.borderfotter{
      
 <script src="jquery.js"></script>
 <script src="bootstrap.min.js"></script>
+<script src="https://kit.fontawesome.com/6298262658.js"></script>
 </body>
 </html>
