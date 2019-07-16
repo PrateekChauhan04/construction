@@ -13,6 +13,28 @@
         
 <title>Straight Line</title>
     <style>
+         a:link {
+  color: whitesmoke;
+text-decoration: none;
+      }
+
+/* visited link */
+a:visited {
+  text-decoration: none;
+    color: white;
+}
+
+/* mouse over link */
+a:hover {
+  text-decoration: none;
+    color: orange;
+}
+p.borderfotter{
+    border-bottom-style: solid;
+   padding-bottom: 12px;
+    border-bottom-color: white;
+    border-width: 1px;
+}
 body, html {
   height: 100%;
   margin: 0;
@@ -71,6 +93,7 @@ body, html {
     border: 1px solid #3c3c3c;
     border-radius: 5px;
     color: #fff!important;
+    text-decoration: none;
 }
 .icon
 {
@@ -96,6 +119,7 @@ h2
     margin-left: -7px;
     font-weight: 600;
     background: 0 0;
+    text-decoration: none;
     line-height: 1.6em;
 }
 lin
@@ -104,7 +128,7 @@ lin
     transition: all .7s ease 0s;
     position: relative;
     margin-bottom: 15px;
-    
+    text-decoration: none;
 }
 </style>
     </head>
@@ -149,6 +173,131 @@ lin
 </div>
         </div>
                
+        
+        <section class="bg-image img1">
+            <img src="office2.jpg" style="height: 240px;
+    width: 100%;
+    background-repeat: repeat-y;
+    background-position: 50% -59.4px;
+    margin: 15px 0px;
+    position: relative;
+    background-size: cover;
+    z-index: 1;
+    background-attachment: fixed;">
+        <div class="bg-text col" >OUR . SERVICES . PLAN
+            <p style="font-size: 13px;
+    font-family: inherit;
+    text-align: center;">We Always look Forward to Providing nothing but the Best to our Clients. Here are a few things that we do Best</p>
+       
+
+            <div class="row">
+            <div class="col-md-3">
+                <article class="article">
+                    <a style="text-decoration: none;" href="https://www.google.com/">
+                        <div class="icon">
+                            <img src="hook .png">
+                        </div>
+                        <div>
+                            <h2>ARCHITECTURAL SERVICES</h2>
+                        </div>
+                        </a>
+                    
+                </article>
+            </div>
+            <div class="col-md-3">
+                <article class="article">
+                    <a  style="text-decoration: none;" href="https://www.google.com/">
+                        <div class="icon">
+                            <img src="crane.png">
+                        </div>
+                        <div>
+                            <h2>ARCHITECTURAL SERVICES</h2>
+                        </div>
+                    </a>
+                </article>
+            </div>
+            <div class="col-md-3">
+                <article class="article">
+                    <a  style="text-decoration: none;" href="https://www.google.com/">
+                        <div class="icon">
+                            <img src="drill.jpg">
+                        </div>
+                        <div>
+                            <h2>ARCHITECTURAL SERVICES</h2>
+                        </div>
+                    </a>
+                </article>
+            </div>
+            <div class="col-md-3">
+                <article class="article">
+                    <a style="text-decoration:none;" href="https://www.google.com/">
+                        <div class="icon">
+                            <img src="engineer.png">
+                        </div>
+                        <div>
+                            <h2>ARCHITECTURAL SERVICES</h2>
+                        </div>
+                    </a>
+                </article>
+            </div>
+            
+                <div class="col-md-3">
+                <article class="article">
+                    <a  style="text-decoration: none;" href="https://www.google.com/">
+                        <div class="icon">
+                            <img src="loader.png">
+                        </div>
+                        <div>
+                            <h2>ARCHITECTURAL SERVICES</h2>
+                        </div>
+                    </a>
+                </article>
+            </div>
+            <div class="col-md-3">
+                <article class="article">
+                    <a  style="text-decoration: none;" href="https://www.google.com/">
+                        <div class="icon">
+                            <img src="pencil.jpg">
+                        </div>
+                        <div>
+                            <h2>ARCHITECTURAL SERVICES</h2>
+                        </div>
+                    </a>
+                </article>
+            </div>
+            <div class="col-md-3">
+                <article class="article">
+                    <a  style="text-decoration: none;" href="https://www.google.com/">
+                        <div class="icon">
+                            <img src="vest.jpg">
+                        </div>
+                        <div>
+                            <h2>ARCHITECTURAL SERVICES</h2>
+                        </div>
+                    </a>
+                </article>
+            </div>
+            <div class="col-md-3">
+                <article class="article">
+                    <a  style="text-decoration: none;" href="https://www.google.com/">
+                        <div class="icon">
+                            <img src="screw.png">
+                        </div>
+                        <div>
+                            <h2>ARCHITECTURAL SERVICES</h2>
+                        </div>
+                    </a>
+                </article>
+            </div>
+            </div>
+        </div>
+        
+            
+            
+
+            </section>
+                 
+        
 <!--  Footer  -->
 <div class="container-fluid">
     <div class="row"> 
@@ -224,131 +373,6 @@ lin
         
 </div>
 </div>
-        
-        <section class="bg-image img1">
-            <img src="office2.jpg" style="height: 240px;
-    width: 100%;
-    background-repeat: repeat-y;
-    background-position: 50% -59.4px;
-    margin: 15px 0px;
-    position: relative;
-    background-size: cover;
-    z-index: 1;
-    background-attachment: fixed;">
-        <div class="bg-text col" >OUR . SERVICES . PLAN
-            <p style="font-size: 13px;
-    font-family: inherit;
-    text-align: center;">We Always look Forward to Providing nothing but the Best to our Clients. Here are a few things that we do Best</p>
-       
-
-            <div class="row">
-            <div class="col-md-3">
-                <article class="article">
-                    <a href="https://www.google.com/">
-                        <div class="icon">
-                            <img src="hook .png">
-                        </div>
-                        <div>
-                            <h2>ARCHITECTURAL SERVICES</h2>
-                        </div>
-                        </a>
-                    
-                </article>
-            </div>
-            <div class="col-md-3">
-                <article class="article">
-                    <a href="https://www.google.com/">
-                        <div class="icon">
-                            <img src="crane.png">
-                        </div>
-                        <div>
-                            <h2>ARCHITECTURAL SERVICES</h2>
-                        </div>
-                    </a>
-                </article>
-            </div>
-            <div class="col-md-3">
-                <article class="article">
-                    <a href="https://www.google.com/">
-                        <div class="icon">
-                            <img src="drill.jpg">
-                        </div>
-                        <div>
-                            <h2>ARCHITECTURAL SERVICES</h2>
-                        </div>
-                    </a>
-                </article>
-            </div>
-            <div class="col-md-3">
-                <article class="article">
-                    <a href="https://www.google.com/">
-                        <div class="icon">
-                            <img src="engineer.png">
-                        </div>
-                        <div>
-                            <h2>ARCHITECTURAL SERVICES</h2>
-                        </div>
-                    </a>
-                </article>
-            </div>
-            
-                <div class="col-md-3">
-                <article class="article">
-                    <a href="https://www.google.com/">
-                        <div class="icon">
-                            <img src="loader.png">
-                        </div>
-                        <div>
-                            <h2>ARCHITECTURAL SERVICES</h2>
-                        </div>
-                    </a>
-                </article>
-            </div>
-            <div class="col-md-3">
-                <article class="article">
-                    <a href="https://www.google.com/">
-                        <div class="icon">
-                            <img src="pencil.jpg">
-                        </div>
-                        <div>
-                            <h2>ARCHITECTURAL SERVICES</h2>
-                        </div>
-                    </a>
-                </article>
-            </div>
-            <div class="col-md-3">
-                <article class="article">
-                    <a href="https://www.google.com/">
-                        <div class="icon">
-                            <img src="vest.jpg">
-                        </div>
-                        <div>
-                            <h2>ARCHITECTURAL SERVICES</h2>
-                        </div>
-                    </a>
-                </article>
-            </div>
-            <div class="col-md-3">
-                <article class="article">
-                    <a href="https://www.google.com/">
-                        <div class="icon">
-                            <img src="screw.png">
-                        </div>
-                        <div>
-                            <h2>ARCHITECTURAL SERVICES</h2>
-                        </div>
-                    </a>
-                </article>
-            </div>
-            </div>
-        </div>
-        
-            
-            
-
-            </section>
-                 
-        
 <script src="jquery.js"></script>
 <script src="bootstrap.min.js"></script>
 </body>

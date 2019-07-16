@@ -10,6 +10,31 @@
     <head>
              <link rel="stylesheet" type="text/css" href="bootstrap.min.css">   
 <title>Straight Line</title>
+<style>
+    
+         a:link {
+  color: whitesmoke;
+text-decoration: none;
+      }
+
+/* visited link */
+a:visited {
+  text-decoration: none;
+    color: white;
+}
+
+/* mouse over link */
+a:hover {
+  text-decoration: none;
+    color: orange;
+}
+p.borderfotter{
+    border-bottom-style: solid;
+   padding-bottom: 12px;
+    border-bottom-color: white;
+    border-width: 1px;
+}
+</style>
     </head>
     <body style="background-color: #E0E0E0">
         <!--Navigation bar -->
