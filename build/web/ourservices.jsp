@@ -12,9 +12,14 @@
         <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
         
 <title>Straight Line</title>
+
     <style>
          a:link {
   color: whitesmoke;
+        
+      a:link {
+  color: grey;
+
 text-decoration: none;
       }
 
@@ -35,6 +40,7 @@ p.borderfotter{
     border-bottom-color: white;
     border-width: 1px;
 }
+
 body, html {
   height: 100%;
   margin: 0;
@@ -157,8 +163,8 @@ lin
           Projects
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="currentp.jsp">Current Projects</a>
-          <a class="dropdown-item" href="completed.jsp">Completed Projects</a>
+          <a class="dropdown-item" href="currentproject.jsp">Current Projects</a>
+          <a class="dropdown-item" href="completeproject.jsp">Completed Projects</a>
         </div>
       </li>
       <li class="nav-item">

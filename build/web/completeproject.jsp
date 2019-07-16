@@ -8,7 +8,11 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
-         <style>
+        <link rel="stylesheet" type="text/css" href="bootstrap.css">
+<link rel="stylesheet" type="text/css" href="bootstrap.min.css"> 
+        
+        
+        <style>
          a:link {
   color: whitesmoke;
 text-decoration: none;
@@ -40,22 +44,23 @@ p.borderfotter{
                    try{
                         SqlUtil.connectDb();
                   
-                        String query="select * from projects where status='complete'";
+                        String query="select * from projects where status='completed'";
                         ResultSet rs=SqlUtil.read(query);
                       %>
                        
 
                       <div style="    background: aliceblue;
-    font-size: 14px;"><table border="1">
-                            
+    font-size: 14px;"><table class="table table-hover">
+                              <thead>
                                 <tr>
-                                    <th>serial no</th>
-                                    <th>Project Name</th>
-                                    <th>Status</th>
-                                    <th>location</th>
-                                    <th>year</th>
+                                    <th scope="col">serial no</th>
+                                    <th scope="col">Project Name</th>
+                                    <th scope="col">Status</th>
+                                    <th scope="col">location</th>
+                                    <th scope="col">year</th>
                                     
-                                </tr>   
+                                </tr>
+                              </thead>
                                 <%                      
                       
                       while(rs.next()){
@@ -66,7 +71,8 @@ p.borderfotter{
                      location = rs.getString("location");
                      year= rs.getString("year");
                                   
-                     %>            
+                     %>         
+                     <tbody>
                                 <tr>
                
                                     <td><%=sno %></td>
@@ -76,13 +82,14 @@ p.borderfotter{
                                     <td><%=year %></td>
                                   
                                 </tr>
-                   
+                     </tbody> 
                         <%}%>
                         </table></div>
                         <% }catch(Exception ex){
                    
                    System.out.println("problem"+ex);
 }
-        %>  
+        %>
+        <script src="jquery.js"></script>
     </body>
 </html>

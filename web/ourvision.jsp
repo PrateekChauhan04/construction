@@ -10,10 +10,16 @@
     <head>
              <link rel="stylesheet" type="text/css" href="bootstrap.min.css">   
 <title>Straight Line</title>
+<<<<<<< HEAD
 <style>
     
          a:link {
   color: whitesmoke;
+=======
+        <style>
+      a:link {
+  color: grey;
+>>>>>>> 3ee55f275bd24b9d1b61faf2e956c5bd2bcb17df
 text-decoration: none;
       }
 
@@ -61,8 +67,8 @@ p.borderfotter{
           Projects
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="currentp.jsp">Current Projects</a>
-          <a class="dropdown-item" href="completed.jsp">Completed Projects</a>
+          <a class="dropdown-item" href="currentproject.jsp">Current Projects</a>
+          <a class="dropdown-item" href="completeproject.jsp">Completed Projects</a>
         </div>
       </li>
       <li class="nav-item">
