@@ -53,7 +53,7 @@ p.borderfotter{
     font-size: 14px;"><table class="table table-hover">
                               <thead>
                                 <tr>
-                                    <th scope="col">serial no</th>
+                                  
                                     <th scope="col">Project Name</th>
                                     <th scope="col">Status</th>
                                     <th scope="col">location</th>
@@ -75,7 +75,7 @@ p.borderfotter{
                      <tbody>
                                 <tr>
                
-                                    <td><%=sno %></td>
+                                
                                     <td><%=p_name %></td>
                                     <td><%=status %></td>
                                     <td><%=location %></td>

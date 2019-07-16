@@ -39,26 +39,24 @@
                     <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
                     <ul class="collapse list-unstyled" id="homeSubmenu">
                         <li>
-                            <a href="addprojects.jsp">ADD PROJECTS</a>
+                            <a style="color:#00c3ff"href="addprojects.jsp">ADD PROJECTS</a>
                         </li>
                         
                         <li>
-                            <a href="updateprojects.jsp">UPDATE PROJECTS</a>
+                            <a style="color:#00c3ff" href="updateprojects.jsp">UPDATE PROJECTS</a>
                         </li>
                         <li>
-                            <a href="deleteprojects.jsp">DELETE PROJECTS</a>
+                            <a style="color:#00c3ff" href="deleteprojects.jsp">DELETE PROJECTS</a>
                         </li>
                         <li>
-                            <a href="viewcurrentproject.jsp">VIEW CURRENT PROJECTS</a>
+                            <a style="color:#00c3ff" href="showprojects.jsp">SHOW PROJECTS</a>
+                        </li>
+                       
+                        <li>
+                            <a style="color:#00c3ff" href="viewinquiry.sjp">VIEW INQURIES</a>
                         </li>
                         <li>
-                            <a href="viewcompleteproject">VIEW COMPLETE PROJECTS</a>
-                        </li>
-                        <li>
-                            <a href="viewinquiry.sjp">VIEW INQURIES</a>
-                        </li>
-                        <li>
-                            <a href="#">LOGOUT</a>
+                            <a style="color:#00c3ff" href="Admin.jsp">LOGOUT</a>
                         </li>
                     </ul>
                 </li>
