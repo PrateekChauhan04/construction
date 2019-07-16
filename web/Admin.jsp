@@ -10,20 +10,11 @@ Admin
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title> Admin pr  </title>
+        <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
         <style>
             
-        #container{
-                background-color: lightgrey;
-                height: 560px;
-                width: 400px;
-                text-align:center;
-                border-radius:13px; 
-                box-shadow:10px 10px  20px black;
-                padding-top: 30px;
-                margin-right: 480px;
-                margin-left: 540px;
-                margin-top: 70px;
-             }    
+            
+         
             
              #inp{
                width: 280px;
@@ -49,15 +40,24 @@ Admin
         </style>
     </head>
     <body>
-        <div id="container">
+        <div class="container">
             <br><br><br>
-        <form>
-            <input id="inp" type="email" name="email" placeholder="Enter Mail" required><br><br>
-            <input id="inp" type="Password" name="pass" placeholder="Enter Password" required><br><br>
-            <input id="btn" type="submit" name="sub" value="Login">
-        </form>
+            <div class="row d-flex justify-content-center shadow-lg p-3 mb-5 bg-white-rounded rounded bg-light text-dark" style="border:lavender;box-shadow: 10px 10px 5px;">
+      <form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" name="email">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" name="pass">
+  </div>
+  
+  <button type="submit" class="btn btn-primary" name="sub">Submit</button>
+</form>
         </div> 
-                              <%--Functionality --%>
+                 </div>             <%--Functionality --%>
                               
          <%!
         String name1=null;
@@ -70,10 +70,11 @@ Admin
          System.out.println(email+" "+password);
            try{
                SqlUtil.connectDb();
-               String query="create table if not exists login(Email varchar(100),password varchar(20))";
+              String query="create table if not exists projects(sno int,projectname varchar(100),status varchar(100),location varchar(200),year date)";
                String query1="select * from login where Email='"+email+"' and password='"+password+"' "; 
                SqlUtil.createTable(query);
-               ResultSet rs=SqlUtil.fetch(query1);
+               
+               ResultSet rs=SqlUtil.read(query1);
                 if(rs.next())
                 {
                     response.sendRedirect("Admin_profile.jsp");
@@ -96,6 +97,7 @@ Admin
         %>                      
                               
                               
-        
+       <script src="jquery.js"></script>
+<script src="bootstrap.min.js"></script> 
     </body>
 </html>

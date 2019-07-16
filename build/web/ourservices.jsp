@@ -13,6 +13,28 @@
         
 <title>Straight Line</title>
     <style>
+         a:link {
+  color: whitesmoke;
+text-decoration: none;
+      }
+
+/* visited link */
+a:visited {
+  text-decoration: none;
+    color: white;
+}
+
+/* mouse over link */
+a:hover {
+  text-decoration: none;
+    color: orange;
+}
+p.borderfotter{
+    border-bottom-style: solid;
+   padding-bottom: 12px;
+    border-bottom-color: white;
+    border-width: 1px;
+}
 body, html {
   height: 100%;
   margin: 0;
@@ -71,6 +93,7 @@ body, html {
     border: 1px solid #3c3c3c;
     border-radius: 5px;
     color: #fff!important;
+    text-decoration: none;
 }
 .icon
 {
@@ -96,6 +119,7 @@ h2
     margin-left: -7px;
     font-weight: 600;
     background: 0 0;
+    text-decoration: none;
     line-height: 1.6em;
 }
 lin
@@ -104,12 +128,13 @@ lin
     transition: all .7s ease 0s;
     position: relative;
     margin-bottom: 15px;
-    
+    text-decoration: none;
 }
 </style>
     </head>
      <body style="background-color: #E0E0E0">
         <!--Navigation bar -->
+        <div class="container-fluid" style="background-color: #343a40; position: relative; ">
         <div class="col-lg-12">
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark position fixed-top">
   <a class="navbar-brand" href="home.jsp">Straight Line</a>
@@ -146,6 +171,8 @@ lin
   </div>
 </nav> 
 </div>
+        </div>
+               
         
         <section class="bg-image img1">
             <img src="office2.jpg" style="height: 240px;
@@ -166,7 +193,7 @@ lin
             <div class="row">
             <div class="col-md-3">
                 <article class="article">
-                    <a href="https://www.google.com/">
+                    <a style="text-decoration: none;" href="https://www.google.com/">
                         <div class="icon">
                             <img src="hook .png">
                         </div>
@@ -179,7 +206,7 @@ lin
             </div>
             <div class="col-md-3">
                 <article class="article">
-                    <a href="https://www.google.com/">
+                    <a  style="text-decoration: none;" href="https://www.google.com/">
                         <div class="icon">
                             <img src="crane.png">
                         </div>
@@ -191,7 +218,7 @@ lin
             </div>
             <div class="col-md-3">
                 <article class="article">
-                    <a href="https://www.google.com/">
+                    <a  style="text-decoration: none;" href="https://www.google.com/">
                         <div class="icon">
                             <img src="drill.jpg">
                         </div>
@@ -203,7 +230,7 @@ lin
             </div>
             <div class="col-md-3">
                 <article class="article">
-                    <a href="https://www.google.com/">
+                    <a style="text-decoration:none;" href="https://www.google.com/">
                         <div class="icon">
                             <img src="engineer.png">
                         </div>
@@ -216,7 +243,7 @@ lin
             
                 <div class="col-md-3">
                 <article class="article">
-                    <a href="https://www.google.com/">
+                    <a  style="text-decoration: none;" href="https://www.google.com/">
                         <div class="icon">
                             <img src="loader.png">
                         </div>
@@ -228,7 +255,7 @@ lin
             </div>
             <div class="col-md-3">
                 <article class="article">
-                    <a href="https://www.google.com/">
+                    <a  style="text-decoration: none;" href="https://www.google.com/">
                         <div class="icon">
                             <img src="pencil.jpg">
                         </div>
@@ -240,7 +267,7 @@ lin
             </div>
             <div class="col-md-3">
                 <article class="article">
-                    <a href="https://www.google.com/">
+                    <a  style="text-decoration: none;" href="https://www.google.com/">
                         <div class="icon">
                             <img src="vest.jpg">
                         </div>
@@ -252,7 +279,7 @@ lin
             </div>
             <div class="col-md-3">
                 <article class="article">
-                    <a href="https://www.google.com/">
+                    <a  style="text-decoration: none;" href="https://www.google.com/">
                         <div class="icon">
                             <img src="screw.png">
                         </div>
@@ -271,6 +298,81 @@ lin
             </section>
                  
         
+<!--  Footer  -->
+<div class="container-fluid">
+    <div class="row"> 
+        <div class="col" style="background-color: black;
+    width: 100%;
+    max-height:400px;
+    padding-left:73px;
+    top: 112px;
+    position: relative;">
+        
+        <p><h6 style="color:white">Quick Links</h6></p>
+    <p class="borderfotter"><a href="home.jsp" target="_blank">>Home</a></p>
+        <p class="borderfotter"><a href="ourservices.jsp" target="_blank">>Our Services</a></p>
+        <p class="borderfotter"><a href="ourvision.jsp" target="_blank">>Our Vision</a></p>
+        <p class="borderfotter"><a href="about.jsp" target="_blank">>About Us</a></p>
+        <p class="borderfotter"><a href="contact.jsp" target="_blank">>Contact Us</a></p>
+        
+        
+        </div>
+        <div class="col" style="background-color: black;
+    width: 100%;
+    max-height:400px;
+    padding-left:14%;
+    top: 112px;
+    position: relative;
+    color: white;">
+            <p><h6>CONTACT WITH ME</h6></p>
+        <p>211,Princess Business Skyline,</p>
+        <p>A.B. Road Scheme No.54,</p>
+        <p class="borderfotter">Sheetal Nagar Indore,MP(452010)</p>
+            
+            
+        </div>
+        <div class="col" style="background-color: black;
+    width: 100%;
+    max-height:400px;
+    padding-left:10%;
+    top: 112px;
+    position: relative;
+    color: white;">
+        
+            <p><h6><i class="fas fa-phone-square-alt"></i>&nbsp;Call Us :</h6></p> 
+        <p>+91 95892 31112</p>
+        <p>+91 87188 16333</p>
+        <p class="borderfotter">0731-497 9346</p>
+        
+        </div> 
+        <div class="col" style="background-color: black;
+    width: 100%;
+    max-height:400px;
+    padding-left:10%;
+    top: 112px;
+    position: relative;
+    color: white;">
+            <p><h6><i class="far fa-envelope"></i>&nbsp;Email:</h6></p> 
+            <p>info@onessinfra.com</p>
+
+            <p>onessinfra@gmail.com</p>
+
+            
+        </div>
+        
+        <div class="col" style="background-color: black;
+    width: 100%;
+    max-height:400px;
+    padding-left:17%;
+    top: 112px;
+    position: relative;
+    color: white;">
+            
+            <p style="padding-left: 15%;">@2019 Copyright Straight Line Pvt. Ltd. Nagpur &nbsp;&nbsp; &nbsp;&nbsp;|&nbsp;&nbsp; &nbsp;&nbsp;Designed by <a href="https://www.facebook.com">ProgrammersDoor</a> </p>
+        </div>
+        
+</div>
+</div>
 <script src="jquery.js"></script>
 <script src="bootstrap.min.js"></script>
 </body>
