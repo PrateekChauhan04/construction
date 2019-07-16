@@ -2,9 +2,9 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
-    <head>
+ <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Admin Profile</title>
+        <title>JSP Page</title>
          <link rel="stylesheet" href="style5.css">
   <!-- Bootstrap CSS CDN -->
   <link rel="stylesheet" type="text/css" href="bootsrap.css">
@@ -12,12 +12,14 @@
 
     <!-- Our Custom CSS -->
     <!-- Font Awesome JS -->
+    
+  
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
-      
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     </head>
     <body>
-        <div class="container">
+        <div class="container-fluid" style="padding-left: 2px;">
             <div class="wrapper">
         <!-- Sidebar Holder -->
         <nav id="sidebar">
@@ -31,26 +33,24 @@
                     <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
                     <ul class="collapse list-unstyled" id="homeSubmenu">
                         <li>
-                            <a href="addprojects.jsp">ADD PROJECTS</a>
+                            <a style="color:#00c3ff"href="addprojects.jsp">ADD PROJECTS</a>
                         </li>
                         
                         <li>
-                            <a href="updateprojects.jsp">UPDATE PROJECTS</a>
+                            <a style="color:#00c3ff"href="updateprojects.jsp">UPDATE PROJECTS</a>
                         </li>
                         <li>
-                            <a href="deleteprojects.jsp">DELETE PROJECTS</a>
+                            <a style="color:#00c3ff"href="deleteprojects.jsp">DELETE PROJECTS</a>
                         </li>
                         <li>
-                            <a href="currentproject.jsp">VIEW CURRENT PROJECTS</a>
+                            <a style="color:#00c3ff" href="showprojects.jsp">SHOW PROJECTS</a>
+                        </li>
+                     
+                        <li>
+                            <a style="color:#00c3ff" href="viewinquiry.sjp">VIEW INQURIES</a>
                         </li>
                         <li>
-                            <a href="completeproject.jsp">VIEW COMPLETED PROJECTS</a>
-                        </li>
-                        <li>
-                            <a href="viewinquiry.sjp">VIEW ENQUIRIES</a>
-                        </li>
-                        <li>
-                            <a href="#">LOGOUT</a>
+                            <a style="color:#00c3ff" href="Admin.jsp">LOGOUT</a>
                         </li>
                     </ul>
                 </li>
@@ -75,7 +75,7 @@
                     </div>
                 </div>
             </nav>
-            
+          
            
         </div>
     </div>
@@ -86,12 +86,18 @@
         
         
         
-        
  
   <script src="jquery.js"></script>
       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <!-- Popper.JS -->
       <!-- Popper.JS -->
+      
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="savestorage.js"></script>
+
+<script>
+    $('#myform').saveStorage();
+</script>
  
      <script type="text/javascript">
         $(document).ready(function () {
@@ -102,5 +108,6 @@
         });
     </script>
          </div>
+      
     </body>
 </html>

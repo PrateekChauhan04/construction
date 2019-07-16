@@ -6,6 +6,10 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
+         <link rel="stylesheet" type="text/css" href="bootstrap.css">
+<link rel="stylesheet" type="text/css" href="bootstrap.min.css"> 
+        
+        
          <style>
          a:link {
   color: whitesmoke;
@@ -44,16 +48,17 @@ p.borderfotter{
                        
 
                       <div style=" background: aliceblue;
-    font-size: 14px;"><table border="1">
-                            
+    font-size: 14px;"><table class="table table-hover">
+                             <thead>
                                 <tr>
-                                    <th>serial no</th>
-                                    <th>Project Name</th>
-                                    <th>Status</th>
-                                    <th>location</th>
-                                    <th>year</th>
+                                  
+                                    <th scope="col">Project Name</th>
+                                    <th scope="col">Status</th>
+                                    <th scope="col">location</th>
+                                    <th scope="col">year</th>
                                     
-                                </tr>   
+                                </tr>
+                              </thead>
                                 <%                      
                       
                       while(rs.next()){
@@ -67,16 +72,17 @@ p.borderfotter{
                                  
                      %>            
                      
+                              <tbody>
                                 <tr>
                
-                                    <td><%=sno %></td>
+                                  
                                     <td><%=p_name %></td>
                                     <td><%=status %></td>
                                     <td><%=location %></td>
                                     <td><%=year %></td>
-                                           
+                                  
                                 </tr>
-                                                
+                     </tbody>         
                         <%}%>
                         </table></div>
                         <% }catch(Exception ex){
