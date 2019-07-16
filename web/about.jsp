@@ -13,12 +13,9 @@
             <title>Straight Line</title>
 
              <style>
-         a:link {
-  color: whitesmoke;
-            <style>
+        
       a:link {
   color: grey;
-
 text-decoration: none;
       }
 
@@ -38,10 +35,8 @@ p.borderfotter{
    padding-bottom: 12px;
     border-bottom-color: white;
     border-width: 1px;
-
-}</style>
-
 }
+             
 </style>
 
     </head>

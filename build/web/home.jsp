@@ -142,9 +142,10 @@ body {
     max-height:400px;
     padding-left:73px;
     top: 112px;
-    position: relative;">
+    position: relative;
+    color:white">
         
-        <p><h6 style="color:white">Quick Links</h6></p>
+        <p><h6>Quick Links</h6></p>
     <p class="borderfotter"><a href="home.jsp" target="_blank">>Home</a></p>
         <p class="borderfotter"><a href="ourservices.jsp" target="_blank">>Our Services</a></p>
         <p class="borderfotter"><a href="ourvision.jsp" target="_blank">>Our Vision</a></p>

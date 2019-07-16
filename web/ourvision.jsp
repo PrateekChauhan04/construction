@@ -13,13 +13,8 @@
 
 <style>
     
-         a:link {
-  color: whitesmoke;
-
-        <style>
       a:link {
   color: grey;
-
 text-decoration: none;
       }
 

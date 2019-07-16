@@ -12,13 +12,8 @@
 <title>Straight Line</title>
 
 <style>
-     a:link {
-  color: whitesmoke;
-
-        <style>
       a:link {
   color: grey;
-
 text-decoration: none;
       }
 
@@ -161,5 +156,6 @@ p.borderfotter{
      
 <script src="jquery.js"></script>
 <script src="bootstrap.min.js"></script>
+<script src="https://kit.fontawesome.com/6298262658.js"></script>
 </body>
 </html>

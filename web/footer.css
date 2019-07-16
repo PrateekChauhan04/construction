@@ -1,0 +1,37 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jul 16, 2019, 11:22:59 PM
+    Author     : Payal Chauhan
+*/
+a:link {
+  color: whitesmoke;
+
+        <style>
+      a:link {
+  color: grey;
+
+text-decoration: none;
+      }
+
+/* visited link */
+a:visited {
+  text-decoration: none;
+    color: white;
+}
+
+/* mouse over link */
+a:hover {
+  text-decoration: none;
+    color: orange;
+}
+p.borderfotter{
+    border-bottom-style: solid;
+   padding-bottom: 12px;
+    border-bottom-color: white;
+    border-width: 1px;
+}
+

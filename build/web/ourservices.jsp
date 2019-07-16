@@ -9,18 +9,15 @@
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="bootstrap.min.css">\
+         <link rel="stylesheet" type="text/css" href="footer.css">
         
 <title>Straight Line</title>
 
-    <style>
-         a:link {
-  color: whitesmoke;
-        
+    <style>   
       a:link {
   color: grey;
-
-text-decoration: none;
+  text-decoration: none;
       }
 
 /* visited link */
@@ -40,7 +37,6 @@ p.borderfotter{
     border-bottom-color: white;
     border-width: 1px;
 }
-
 body, html {
   height: 100%;
   margin: 0;
@@ -56,7 +52,7 @@ body, html {
   height: 50%; 
   
   /* Center and scale the image nicely */
-  background-repeat: norepeat;
+  background-repeat: no-repeat;
   background-position: 50% -59.4px;
     background-size: cover;
   height: 1000px;
@@ -99,7 +95,7 @@ body, html {
     border: 1px solid #3c3c3c;
     border-radius: 5px;
     color: #fff!important;
-    text-decoration: none;
+    
 }
 .icon
 {
@@ -201,7 +197,7 @@ lin
                 <article class="article">
                     <a style="text-decoration: none;" href="https://www.google.com/">
                         <div class="icon">
-                            <img src="hook .png">
+                            <img src="hook.png">
                         </div>
                         <div>
                             <h2>ARCHITECTURAL SERVICES</h2>
@@ -304,17 +300,28 @@ lin
             </section>
                  
         
+        
+        
+        
+        
+        
+        
+        
 <!--  Footer  -->
-<div class="container-fluid">
+<div class="container-fluid" style="position: relative;
+     top:-127px; ">
     <div class="row"> 
         <div class="col" style="background-color: black;
     width: 100%;
     max-height:400px;
     padding-left:73px;
     top: 112px;
-    position: relative;">
+    position: relative;
+    color:white;
+   
+">
         
-        <p><h6 style="color:white">Quick Links</h6></p>
+        <p><h6>Quick Links</h6></p>
     <p class="borderfotter"><a href="home.jsp" target="_blank">>Home</a></p>
         <p class="borderfotter"><a href="ourservices.jsp" target="_blank">>Our Services</a></p>
         <p class="borderfotter"><a href="ourvision.jsp" target="_blank">>Our Vision</a></p>

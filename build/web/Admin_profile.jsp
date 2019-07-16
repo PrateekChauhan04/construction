@@ -47,7 +47,7 @@
                         </li>
                      
                         <li>
-                            <a style="color:#00c3ff" href="viewinquiry.sjp">VIEW INQURIES</a>
+                            <a style="color:#00c3ff" href="viewinquiry.jsp">VIEW INQURIES</a>
                         </li>
                         <li>
                             <a style="color:#00c3ff" href="Admin.jsp">LOGOUT</a>
