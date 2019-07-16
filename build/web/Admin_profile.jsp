@@ -41,13 +41,13 @@
                             <a href="deleteprojects.jsp">DELETE PROJECTS</a>
                         </li>
                         <li>
-                            <a href="viewcurrentproject.jsp">VIEW CURRENT PROJECTS</a>
+                            <a href="currentproject.jsp">VIEW CURRENT PROJECTS</a>
                         </li>
                         <li>
-                            <a href="viewcompleteproject">VIEW COMPLETE PROJECTS</a>
+                            <a href="completeproject.jsp">VIEW COMPLETED PROJECTS</a>
                         </li>
                         <li>
-                            <a href="viewinquiry.sjp">VIEW INQURIES</a>
+                            <a href="viewinquiry.sjp">VIEW ENQUIRIES</a>
                         </li>
                         <li>
                             <a href="#">LOGOUT</a>
