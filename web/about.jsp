@@ -11,15 +11,14 @@
                <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
    
             <title>Straight Line</title>
-<<<<<<< HEAD
+
              <style>
          a:link {
   color: whitesmoke;
-=======
             <style>
       a:link {
   color: grey;
->>>>>>> 3ee55f275bd24b9d1b61faf2e956c5bd2bcb17df
+
 text-decoration: none;
       }
 
@@ -39,12 +38,12 @@ p.borderfotter{
    padding-bottom: 12px;
     border-bottom-color: white;
     border-width: 1px;
-<<<<<<< HEAD
+
 }</style>
-=======
+
 }
 </style>
->>>>>>> 3ee55f275bd24b9d1b61faf2e956c5bd2bcb17df
+
     </head>
     <body style="background-color: #E0E0E0">
         <!--Navigation bar -->
@@ -164,6 +163,6 @@ p.borderfotter{
 </div>
 <script src="jquery.js"></script>
 <script src="bootstrap.min.js"></script>
-
+<script src="https://kit.fontawesome.com/6298262658.js"></script>
 </body>
 </html>

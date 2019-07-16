@@ -379,6 +379,7 @@ lin
         
 </div>
 </div>
+<script src="https://kit.fontawesome.com/6298262658.js"></script>
 <script src="jquery.js"></script>
 <script src="bootstrap.min.js"></script>
 </body>
