@@ -40,6 +40,50 @@ Admin
         </style>
     </head>
     <body>
+        
+         <div class="container-fluid" style="background-color: #343a40; position: relative; ">
+        <div class="col-lg-12">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-between ">
+  <a class="navbar-brand" href="home.jsp">Straight Line</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="home.jsp">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="ourservices.jsp">Our Services</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="ourvision.jsp">Our Vision</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Projects
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="currentproject.jsp">Current Projects</a>
+          <a class="dropdown-item" href="completeproject.jsp">Completed Projects</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="about.jsp">About Us</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="contact.jsp">Contact Us</a>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link" href="Admin.jsp">Admin Login</a>
+       </li>
+    </ul>      
+  </div>
+</nav> 
+</div>
+        </div>
+        
+        
         <div class="container">
             <br><br><br>
             <div class="row d-flex justify-content-center shadow-lg p-3 mb-5 bg-white-rounded rounded bg-light text-dark" style="border:lavender;box-shadow: 10px 10px 5px;">
@@ -70,7 +114,7 @@ Admin
          System.out.println(email+" "+password);
            try{
                SqlUtil.connectDb();
-              String query="create table if not exists projects(sno int,projectname varchar(100),status varchar(100),location varchar(200),year date)";
+              String query="create table if not exists projects(pid int primary key,projectname varchar(100),status varchar(100),location varchar(200),year date)";
                String query1="select * from login where Email='"+email+"' and password='"+password+"' "; 
                SqlUtil.createTable(query);
                
@@ -91,7 +135,7 @@ Admin
               }
             catch(Exception ex)
             {
-            
+            System.out.println("");
             }
         }
         %>                      

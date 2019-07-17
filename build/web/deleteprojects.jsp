@@ -39,14 +39,14 @@
                     <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
                     <ul class="collapse list-unstyled" id="homeSubmenu">
                         <li>
-                            <a style="color:#00c3ff"href="addprojects.jsp">ADD PROJECTS</a>
+                            <a style="color:#00c3ff" href="addprojects.jsp">ADD PROJECTS</a>
                         </li>
                         
                         <li>
-                            <a style="color:#00c3ff"href="updateprojects.jsp">UPDATE PROJECTS</a>
+                            <a style="color:#00c3ff" href="updateprojects.jsp">UPDATE PROJECTS</a>
                         </li>
                         <li>
-                            <a style="color:#00c3ff"href="deleteprojects.jsp">DELETE PROJECTS</a>
+                            <a style="color:#00c3ff" href="deleteprojects.jsp">DELETE PROJECTS</a>
                         </li>
                         <li>
                             <a style="color:#00c3ff" href="showprojects.jsp">SHOW PROJECTS</a>
@@ -87,7 +87,7 @@
       <form>
   <div class="form-group">
     <label for="exampleInputEmail1">DELETE PROJECT</label>
-    <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter serial no" name="sid">
+    <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Project id" name="pid">
 
   </div>
   
@@ -109,8 +109,8 @@
          <%  if(request.getParameter("del")!= null){
             
            
-            int sid = Integer.parseInt(request.getParameter("sid"));
-            String query = "delete from projects where sno = "+sid+"";       
+            int pid = Integer.parseInt(request.getParameter("pid"));
+            String query = "delete from projects where pid = "+pid+"";       
             try{
             SqlUtil.connectDb();
             SqlUtil.Updatetable(query);

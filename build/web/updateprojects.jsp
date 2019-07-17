@@ -12,8 +12,8 @@
         <title>JSP Page</title>
          <link rel="stylesheet" href="style5.css">
   <!-- Bootstrap CSS CDN -->
-  <link rel="stylesheet" type="text/css" href="bootsrap.css">
-<link rel="stylesheet" type="text/css" href="bootsrap.min.css">
+  <link rel="stylesheet" type="text/css" href="bootstrap.css">
+<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
 
     <!-- Our Custom CSS -->
     <!-- Font Awesome JS -->
@@ -39,26 +39,24 @@
                     <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
                     <ul class="collapse list-unstyled" id="homeSubmenu">
                         <li>
-                            <a href="addprojects.jsp">ADD PROJECTS</a>
+                            <a style="color:#00c3ff" href="addprojects.jsp">ADD PROJECTS</a>
                         </li>
                         
                         <li>
-                            <a href="updateprojects.jsp">UPDATE PROJECTS</a>
+                            <a style="color:#00c3ff"  href="updateprojects.jsp">UPDATE PROJECTS</a>
                         </li>
                         <li>
-                            <a href="deleteprojects.jsp">DELETE PROJECTS</a>
+                            <a style="color:#00c3ff"  href="deleteprojects.jsp">DELETE PROJECTS</a>
+                        </li>
+                         <li>
+                            <a style="color:#00c3ff" href="showprojects.jsp">SHOW PROJECTS</a>
+                        </li>
+                     
+                        <li>
+                            <a style="color:#00c3ff" href="viewinquiry.jsp">VIEW INQURIES</a>
                         </li>
                         <li>
-                            <a href="currentproject.jsp">VIEW CURRENT PROJECTS</a>
-                        </li>
-                        <li>
-                            <a href="completeproject.jsp">VIEW COMPLETE PROJECTS</a>
-                        </li>
-                        <li>
-                            <a href="viewinquiry.jsp">VIEW INQURIES</a>
-                        </li>
-                        <li>
-                            <a href="Admin.jsp">LOGOUT</a>
+                            <a style="color:#00c3ff" href="Admin.jsp">LOGOUT</a>
                         </li>
                     </ul>
                 </li>

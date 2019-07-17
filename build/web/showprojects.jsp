@@ -14,8 +14,8 @@
         <title>JSP Page</title>
                 <link rel="stylesheet" href="style5.css">
   <!-- Bootstrap CSS CDN -->
-  <link rel="stylesheet" type="text/css" href="bootsrap.css">
-<link rel="stylesheet" type="text/css" href="bootsrap.min.css">
+  <link rel="stylesheet" type="text/css" href="bootstrap.css">
+<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
 
     <!-- Our Custom CSS -->
     <!-- Font Awesome JS -->
@@ -42,14 +42,14 @@
                     <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
                     <ul class="collapse list-unstyled" id="homeSubmenu">
                         <li>
-                            <a style="color:#00c3ff"href="addprojects.jsp">ADD PROJECTS</a>
+                            <a style="color:#00c3ff" href="addprojects.jsp">ADD PROJECTS</a>
                         </li>
                         
                         <li>
-                            <a style="color:#00c3ff"href="updateprojects.jsp">UPDATE PROJECTS</a>
+                            <a style="color:#00c3ff" href="updateprojects.jsp">UPDATE PROJECTS</a>
                         </li>
                         <li>
-                            <a style="color:#00c3ff"href="deleteprojects.jsp">DELETE PROJECTS</a>
+                            <a style="color:#00c3ff" href="deleteprojects.jsp">DELETE PROJECTS</a>
                         </li>
                         <li>
                             <a style="color:#00c3ff" href="showprojects.jsp">SHOW PROJECTS</a>
@@ -84,7 +84,7 @@
                     </div>
                 </div>
             </nav>
-        <%!String p_name,status,location,year;int sno; %>      
+        <%!String p_name,status,location,year;int pid; %>      
            <%
               
                
@@ -100,7 +100,10 @@
     font-size: 14px;"><table class="table table-hover">
                             <thead>
                                 <tr>
-                                    <th scope="col">serial no</th>
+                                    <th scope="col">
+                                        Serial No
+                                    </th>
+                                    <th scope="col">Project Id</th>
                                     <th scope="col">Project Name</th>
                                     <th scope="col">Status</th>
                                     <th scope="col">location</th>
@@ -109,10 +112,10 @@
                                 </tr>
                               </thead>
                                 <%                      
-                      
+                      int i=1;
                       while(rs.next()){
                      
-                     sno= rs.getInt("sno");
+                     pid= rs.getInt("pid");
                      p_name= rs.getString("projectname");
                      status= rs.getString("status");
                      location = rs.getString("location");
@@ -125,8 +128,8 @@
                      
                       <tbody>
                                 <tr>
-               
-                                    <td><%=sno %></td>
+                                    <td><%=i++ %></td>
+                                    <td><%=pid %></td>
                                     <td><%=p_name %></td>
                                     <td><%=status %></td>
                                     <td><%=location %></td>

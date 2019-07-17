@@ -91,8 +91,8 @@
                 <div class="form-area">
                     <form id="myform">
                          <div class="form-group">
-                            <label for="name">Serial Number</label>
-                            <input type="number" name="sid" class="form-control" id="name">
+                            <label for="name">Project id</label>
+                            <input type="number" name="pid" class="form-control" id="name">
                         </div>
                         <div class="form-group">
                             <label for="name">Project Name</label>
@@ -161,19 +161,28 @@
     </script>
          </div>
         
-        <%! int sid; String project_name,status,loctaion,date;%>
+        <%! int pid; String project_name,status,loctaion,date;%>
         <% if(request.getParameter("btn")!=null){
              
-         sid=  Integer.parseInt(request.getParameter("sid"));
+         pid=  Integer.parseInt(request.getParameter("pid"));
         project_name= request.getParameter("p_name");
         status= request.getParameter("status");
         loctaion=  request.getParameter("loc");
         date=request.getParameter("date");
         System.out.println("location"+loctaion);
         try{ SqlUtil.connectDb();
-          String query ="insert into projects values("+sid+",'"+project_name+"','"+status +"','"+loctaion+"','"+date+"')";  
+          String query ="insert into projects values("+pid+",'"+project_name+"','"+status +"','"+loctaion+"','"+date+"')";  
         SqlUtil.Updatetable(query);
         }catch(Exception ex){
+%>
+<script>
+    
+    alert('project id alreadt inserted please insert other projectid');
+    
+</script> 
+
+
+         <%
         System.out.println("erro in inserting");
         }
         }

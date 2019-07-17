@@ -20,7 +20,7 @@ import java.sql.Statement;
 public class SqlUtil {
     private static final String DBURL="jdbc:mysql://localhost:3306/";
     private static final String DBUSER="root";
-    private static final String DBPASS="prateek";
+    private static final String DBPASS="Gaurav";
     private static final String Driver="com.mysql.jdbc.Driver";
     private static final String DBNAME="construction";
     static Connection conn;
@@ -53,19 +53,14 @@ st.execute(query);
 
 } 
 
-public static void Updatetable(String query){
-try{
+public static void Updatetable(String query) throws SQLException{
+
 if(st==null){
 
 connectDb();
 }
 st.executeUpdate(query);
 
-}
-catch(SQLException ex){
-
-            System.out.println("problem in Updation"+ex);
-}
 }
 
   public static ResultSet read(String query)

@@ -37,7 +37,7 @@ p.borderfotter{
 }</style>
     </head>
     <body>
-        <%!String p_name,status,location,year;int sno; %>      
+        <%!String p_name,status,location,year;int pid; %>      
            <%
               
                
@@ -53,7 +53,8 @@ p.borderfotter{
     font-size: 14px;"><table class="table table-hover">
                               <thead>
                                 <tr>
-                                  
+                                    <th scope="col">Serial No</th>
+                                  <th scope="col">Project Id</th>
                                     <th scope="col">Project Name</th>
                                     <th scope="col">Status</th>
                                     <th scope="col">location</th>
@@ -62,10 +63,10 @@ p.borderfotter{
                                 </tr>
                               </thead>
                                 <%                      
-                      
+                      int i=1;
                       while(rs.next()){
                      
-                     sno= rs.getInt("sno");
+                     pid= rs.getInt("pid");
                      p_name= rs.getString("projectname");
                      status= rs.getString("status");
                      location = rs.getString("location");
@@ -74,8 +75,8 @@ p.borderfotter{
                      %>         
                      <tbody>
                                 <tr>
-               
-                                
+                                    <td><%=i++%></td>
+                                    <td><%=pid %></td>
                                     <td><%=p_name %></td>
                                     <td><%=status %></td>
                                     <td><%=location %></td>
