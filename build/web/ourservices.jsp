@@ -9,8 +9,8 @@
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" type="text/css" href="bootstrap.min.css">\
-         <link rel="stylesheet" type="text/css" href="footer.css">
+        <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+        
         
 <title>Straight Line</title>
 
@@ -138,7 +138,7 @@ lin
         <!--Navigation bar -->
         <div class="container-fluid" style="background-color: #343a40; position: relative; ">
         <div class="col-lg-12">
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark position fixed-top">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-between">
   <a class="navbar-brand" href="home.jsp">Straight Line</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
