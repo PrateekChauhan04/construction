@@ -200,7 +200,7 @@ lin
                             <img src="hook.png">
                         </div>
                         <div>
-                            <h2>ARCHITECTURAL SERVICES</h2>
+                            <h2>Construction Project-Management/Monitor</h2>
                         </div>
                         </a>
                     
@@ -213,7 +213,7 @@ lin
                             <img src="crane.png">
                         </div>
                         <div>
-                            <h2>ARCHITECTURAL SERVICES</h2>
+                            <h2>Civil Constructions Services</h2>
                         </div>
                     </a>
                 </article>
@@ -225,7 +225,7 @@ lin
                             <img src="drill.jpg">
                         </div>
                         <div>
-                            <h2>ARCHITECTURAL SERVICES</h2>
+                            <h2>Architectural Design</h2>
                         </div>
                     </a>
                 </article>
@@ -237,7 +237,7 @@ lin
                             <img src="engineer.png">
                         </div>
                         <div>
-                            <h2>ARCHITECTURAL SERVICES</h2>
+                            <h2>Consultation</h2>
                         </div>
                     </a>
                 </article>
@@ -250,7 +250,7 @@ lin
                             <img src="loader.png">
                         </div>
                         <div>
-                            <h2>ARCHITECTURAL SERVICES</h2>
+                            <h2>Planner</h2>
                         </div>
                     </a>
                 </article>
@@ -262,7 +262,7 @@ lin
                             <img src="pencil.jpg">
                         </div>
                         <div>
-                            <h2>ARCHITECTURAL SERVICES</h2>
+                            <h2>Structural Drawing</h2>
                         </div>
                     </a>
                 </article>
@@ -274,7 +274,7 @@ lin
                             <img src="vest.jpg">
                         </div>
                         <div>
-                            <h2>ARCHITECTURAL SERVICES</h2>
+                             <h2>Designer</h2>
                         </div>
                     </a>
                 </article>
@@ -286,7 +286,7 @@ lin
                             <img src="screw.png">
                         </div>
                         <div>
-                            <h2>ARCHITECTURAL SERVICES</h2>
+                            <h2>Estimate costing & layout</h2>
                         </div>
                     </a>
                 </article>
