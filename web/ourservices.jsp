@@ -103,7 +103,7 @@ body, html {
     speak: none;
     font-style: normal;
     font-weight: 400;
-    padding-right: 135px;
+    padding-right: 0px;
     padding-top: 10px;
     font-variant: normal;
     text-transform: none;
@@ -111,26 +111,54 @@ body, html {
     font-size: 30px;
     -webkit-font-smoothing: antialiased;
 }
-h2
+.article2
+{
+    background: rgba(0,0,0,.9);
+    padding: 25px;
+    margin: 0px 3px;
+    height: 240px;
+    border: 1px solid #f7f4f4;
+    border-radius: 5px;
+    color: #fff!important;
+}
+.heading1
+{
+    color: #fff;
+    font-family: pt sans,sans-serif;
+    font-size: 35px;
+    margin: -15px 0px;
+    padding-left: 10%;
+    line-height: 1.3;
+    padding-top: 50px;
+}
+.para1
+{
+    color: #fff;
+    margin: 0 0 10px;
+    line-height: 1.6;
+    font-size: 14px;
+    text-align: justify;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    -webkit-font-smoothing: antialiased;
+    padding-left: 134px;
+}
+.heading2
 {
     color: #fff;
     font-size: 12px;
     text-transform: uppercase;
     position: relative;
     margin: 0;
-    margin-left: -7px;
-    font-weight: 600;
+    padding-top: 10px;
+    margin-left: 0px;
+    font-weight: 500;
     background: 0 0;
     text-decoration: none;
     line-height: 1.6em;
-}
-lin
-{
-    width: 35px;
-    transition: all .7s ease 0s;
-    position: relative;
-    margin-bottom: 15px;
-    text-decoration: none;
 }
 </style>
     </head>
@@ -177,15 +205,14 @@ lin
                
         
         <section class="bg-image img1">
-            <img src="office2.jpg" style="height: 240px;
-    width: 100%;
-    background-repeat: repeat-y;
-    background-position: 50% -59.4px;
-    margin: 15px 0px;
-    position: relative;
-    background-size: cover;
-    z-index: 1;
-    background-attachment: fixed;">
+            <div class="row">
+            <article class="col-lg-12 article2">
+                <div>
+                    <h2 class="heading1">SERVICES</h2>
+                    <p class="para1">Home / Services</p>
+                </div>
+            </article>
+            </div>
         <div class="bg-text col" >OUR . SERVICES . PLAN
             <p style="font-size: 13px;
     font-family: inherit;
@@ -200,7 +227,7 @@ lin
                             <img src="hook.png">
                         </div>
                         <div>
-                            <h2>Construction Project-Management/Monitor</h2>
+                            <h2 class="heading2">Project Management</h2>
                         </div>
                         </a>
                     
@@ -213,7 +240,7 @@ lin
                             <img src="crane.png">
                         </div>
                         <div>
-                            <h2>Civil Constructions Services</h2>
+                            <h2 class="heading2">Civil Constructions Services</h2>
                         </div>
                     </a>
                 </article>
@@ -225,7 +252,7 @@ lin
                             <img src="drill.jpg">
                         </div>
                         <div>
-                            <h2>Architectural Design</h2>
+                            <h2 class="heading2">Architectural Design</h2>
                         </div>
                     </a>
                 </article>
@@ -237,7 +264,7 @@ lin
                             <img src="engineer.png">
                         </div>
                         <div>
-                            <h2>Consultation</h2>
+                            <h2 class="heading2">Consultation</h2>
                         </div>
                     </a>
                 </article>
@@ -250,7 +277,7 @@ lin
                             <img src="loader.png">
                         </div>
                         <div>
-                            <h2>Planner</h2>
+                            <h2 class="heading2">Planner</h2>
                         </div>
                     </a>
                 </article>
@@ -262,7 +289,7 @@ lin
                             <img src="pencil.jpg">
                         </div>
                         <div>
-                            <h2>Structural Drawing</h2>
+                            <h2 class="heading2">Structural Drawing</h2>
                         </div>
                     </a>
                 </article>
@@ -274,7 +301,7 @@ lin
                             <img src="vest.jpg">
                         </div>
                         <div>
-                             <h2>Designer</h2>
+                            <h2 class="heading2">Designer</h2>
                         </div>
                     </a>
                 </article>
@@ -286,7 +313,7 @@ lin
                             <img src="screw.png">
                         </div>
                         <div>
-                            <h2>Estimate costing & layout</h2>
+                            <h2 class="heading2">Estimate costing & layout</h2>
                         </div>
                     </a>
                 </article>
