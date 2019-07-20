@@ -3,7 +3,9 @@
     Created on : Jul 7, 2019, 7:20:53 PM
     Author     : NEO
 --%>
-
+<%@page import="java.sql.ResultSet"%>
+<%@page import="util.SqlUtil"%>
+<%@page import="java.io.PrintWriter"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -81,54 +83,73 @@
                     </div>
                 </div>
             </nav>
-             <div id="wrapper" class="mt-4 mb-4">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 offset-md-3">
-                <div class="title text-center mb-5">
-                    <h1 class="h2">ADD PROJECTS</h1>
-                </div>
-                <div class="form-area">
-                    <form id="myform">
-                         <div class="form-group">
-                            <label for="name">Serial Number</label>
-                            <input type="number" name="sid" class="form-control" id="name">
-                        </div>
-                        <div class="form-group">
-                            <label for="name">Project Name</label>
-                            <input type="text" name="p_name" class="form-control" id="name">
-                        </div>
-                        <br>
-                         <div class="form-group">
-                                    <select class="form-control" name="status">
-                                        
-                                        <option value="completed">Completed</option>
-                                        <option value="current">Current</option>
-                                                                          </select>
-                                </div>
-                    
-                        <br>
-                           <div class="form-group">
-                            <label for="message">Location</label>
-                            <textarea  id="message" rows="3" class="form-control" name="loc"></textarea>
-                        </div>
-                     
-                        
-                        <div class="form-group">
-                            <label for="surname">Year</label>
-                            <input type="date"  class="form-control" id="surname" name="date">
-                        </div>
-                        
-                        
-                        
-                        <input class="btn btn-success btn-block" type="submit" name="btn"></button>
-                    </form>
-                </div>
+            
+            <div>
+                <form>
+                    <input type="number" name="sno">
+                    <br>
+                    <br>
+                    <input type="submit" name="submit" value="submit">
+                </form>
             </div>
-        </div>
-    </div>
-</div>
-           
+            <%!int sno;%>
+        <%!String projectname,status,location,year,query;%>
+             <%
+                if(request.getParameter("submit")!=null)
+                {
+                    sno=Integer.parseInt(request.getParameter("sno"));
+                query="select * from projects where sno="+sno+"";
+                ResultSet rs=SqlUtil.read(query);
+                try
+                { 
+                    while(rs.next())
+                    {
+                        projectname=rs.getString("projectname");
+                        status=rs.getString("status");
+                        location=rs.getString("location");
+                        year=rs.getString("year");
+                        
+                    }
+                }
+                catch(Exception ex){
+                     System.out.println("problem"+ex);
+                    }
+                 
+             %>
+             <div>
+                 <form>
+                     <input type="text" name="p_name" value="<%=projectname%>" placeholder="projectname">
+                     <br>
+                     <input type="text" name="status" value="<%=status%>" placeholder="status">
+                     <br>
+                     <input type="text" name="loc" value="<%=location%>" placeholder="location">
+                     <br>
+                     <input type="date" name="date" value="<%=year%>" placeholder="year">
+                     <br>
+                     <input type="submit" name="update" value="update">
+                 </form>
+             </div>
+                     <%  }
+                         System.out.println("update");
+                         if(request.getParameter("update")!=null)
+                         {
+                        projectname=request.getParameter("p_name");
+                        System.out.println("projectname");
+                        status=request.getParameter("status");
+                        location=request.getParameter("loc");
+                        year=request.getParameter("date");
+                         
+                try{
+                    
+                    
+                SqlUtil.connectDb();
+                SqlUtil.Updatetable("update projects set projectname='"+projectname+"',status='"+status+"',location='"+location+"',year='"+year+"' where sno="+sno+"");
+                }catch(Exception ex)
+                {
+                    System.out.println("problem"+ex);
+                }
+                }
+            %>
         </div>
     </div>
             
@@ -150,7 +171,7 @@
 <script>
     $('#myform').saveStorage();
 </script>
- 
+ j
      <script type="text/javascript">
         $(document).ready(function () {
             $('#sidebarCollapse').on('click', function () {
