@@ -115,7 +115,7 @@
                       int i=1;
                       while(rs.next()){
                      
-                     pid= rs.getInt("pid");
+                     pid= rs.getInt("sno");
                      p_name= rs.getString("projectname");
                      status= rs.getString("status");
                      location = rs.getString("location");
