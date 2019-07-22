@@ -27,6 +27,11 @@
 
     </head>
     <body>
+        <%
+            session=request.getSession();
+            String username=(String)session.getAttribute("username");
+            
+            if(!(username=="")){ %>
          <div class="container-fluid" style="padding-left: 2px;">
             <div class="wrapper">
         <!-- Sidebar Holder -->
@@ -58,7 +63,7 @@
                             <a style="color:#00c3ff" href="viewinquiry.jsp">VIEW INQURIES</a>
                         </li>
                         <li>
-                            <a style="color:#00c3ff" href="Admin.jsp">LOGOUT</a>
+                            <a href="logout.jsp" style="color:#00c3ff" name="logout" href="Admin.jsp">LOGOUT</a>
                         </li>
                     </ul>
                 </li>
@@ -93,21 +98,21 @@
                 </form>
             </div>
             <%!int sno;%>
-        <%!String projectname,status,location,year,query;%>
+        <%!String project_name,status,location,date,query;%>
              <%
                 if(request.getParameter("submit")!=null)
                 {
                     sno=Integer.parseInt(request.getParameter("sno"));
-                query="select * from projects where sno="+sno+"";
+                query="select * from projects where pid="+sno+"";
                 ResultSet rs=SqlUtil.read(query);
                 try
                 { 
                     while(rs.next())
                     {
-                        projectname=rs.getString("projectname");
+                        project_name=rs.getString("project_name");
                         status=rs.getString("status");
                         location=rs.getString("location");
-                        year=rs.getString("year");
+                        date=rs.getString("date");
                         
                     }
                 }
@@ -118,13 +123,13 @@
              %>
              <div>
                  <form>
-                     <input type="text" name="p_name" value="<%=projectname%>" placeholder="projectname">
+                     <input type="text" name="p_name" value="<%=project_name%>" placeholder="projectname">
                      <br>
                      <input type="text" name="status" value="<%=status%>" placeholder="status">
                      <br>
                      <input type="text" name="loc" value="<%=location%>" placeholder="location">
                      <br>
-                     <input type="date" name="date" value="<%=year%>" placeholder="year">
+                     <input type="date" name="date" value="<%=date%>" placeholder="date">
                      <br>
                      <input type="submit" name="update" value="update">
                  </form>
@@ -133,17 +138,17 @@
                          System.out.println("update");
                          if(request.getParameter("update")!=null)
                          {
-                        projectname=request.getParameter("p_name");
-                        System.out.println("projectname");
+                        project_name=request.getParameter("p_name");
+                        System.out.println("project_name");
                         status=request.getParameter("status");
                         location=request.getParameter("loc");
-                        year=request.getParameter("date");
+                        date=request.getParameter("date");
                          
                 try{
                     
                     
                 SqlUtil.connectDb();
-                SqlUtil.Updatetable("update projects set projectname='"+projectname+"',status='"+status+"',location='"+location+"',year='"+year+"' where sno="+sno+"");
+                SqlUtil.Updatetable("update projects set project_name='"+project_name+"',status='"+status+"',location='"+location+"',date='"+date+"' where pid="+sno+"");
                 }catch(Exception ex)
                 {
                     System.out.println("problem"+ex);
@@ -181,6 +186,11 @@
         });
     </script>
          </div>
-      
+      <% }else{
+
+      response.sendRedirect("Admin.jsp");
+   
+   }%>
+    
     </body>
 </html>

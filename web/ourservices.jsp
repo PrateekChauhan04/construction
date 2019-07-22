@@ -125,7 +125,6 @@ body, html {
 {
     color: #fff;
     font-family: pt sans,sans-serif;
-    font-size: 35px;
     margin: -15px 0px;
     padding-left: 10%;
     line-height: 1.3;
@@ -208,7 +207,7 @@ body, html {
             <div class="row">
             <article class="col-lg-12 article2">
                 <div>
-                    <h2 class="heading1">SERVICES</h2>
+                    <h4 class="heading1">SERVICES</h4>
                     <p class="para1">Home / Services</p>
                 </div>
             </article>
@@ -395,7 +394,7 @@ body, html {
             <p><h6><i class="far fa-envelope"></i>&nbsp;Email:</h6></p> 
             <p>info@onessinfra.com</p>
 
-            <p>onessinfra@gmail.com</p>
+            <p class="borderfotter">onessinfra@gmail.com</p>
 
             
         </div>

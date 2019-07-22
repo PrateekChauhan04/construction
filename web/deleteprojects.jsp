@@ -25,6 +25,11 @@
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
    </head>
     <body>
+        <%
+            session=request.getSession();
+            String username=(String)session.getAttribute("username");
+            
+            if(!(username=="")){ %>
       <div class="container-fluid" style="padding-left: 2px;">
             <div class="wrapper">
         <!-- Sidebar Holder -->
@@ -56,7 +61,7 @@
                             <a style="color:#00c3ff" href="viewinquiry.jsp">VIEW INQURIES</a>
                         </li>
                         <li>
-                            <a style="color:#00c3ff" href="Admin.jsp">LOGOUT</a>
+                            <a href="logout.jsp" style="color:#00c3ff" name="logout" href="Admin.jsp">LOGOUT</a>
                         </li>
                     </ul>
                 </li>
@@ -149,6 +154,11 @@
             });
         });
     </script>
-       
+       <% }else{
+
+      response.sendRedirect("Admin.jsp");
+   
+   }%>
+   
     </body>
 </html>

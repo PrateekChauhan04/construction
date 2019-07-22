@@ -27,7 +27,11 @@
 
     </head>
     <body>
-        
+        <%
+            session=request.getSession();
+            String username=(String)session.getAttribute("username");
+            
+            if(!(username=="")){ %>
          <div class="container-fluid" style="padding-left: 2px;">
             <div class="wrapper">
         <!-- Sidebar Holder -->
@@ -59,7 +63,7 @@
                             <a style="color:#00c3ff" href="viewinquiry.jsp">VIEW INQURIES</a>
                         </li>
                         <li>
-                            <a style="color:#00c3ff" href="Admin.jsp">LOGOUT</a>
+                            <a href="logout.jsp" style="color:#00c3ff" name="logout" href="Admin.jsp">LOGOUT</a>
                         </li>
                     </ul>
                 </li>
@@ -84,7 +88,7 @@
                     </div>
                 </div>
             </nav>
-        <%!String p_name,status,location,year;int pid; %>      
+        <%!String project_name,status,location,date;int pid; %>      
            <%
               
                
@@ -107,7 +111,7 @@
                                     <th scope="col">Project Name</th>
                                     <th scope="col">Status</th>
                                     <th scope="col">location</th>
-                                    <th scope="col">year</th>
+                                    <th scope="col">date</th>
                                     
                                 </tr>
                               </thead>
@@ -115,11 +119,11 @@
                       int i=1;
                       while(rs.next()){
                      
-                     pid= rs.getInt("sno");
-                     p_name= rs.getString("projectname");
+                     pid= rs.getInt("pid");
+                     project_name= rs.getString("project_name");
                      status= rs.getString("status");
                      location = rs.getString("location");
-                     year= rs.getString("year");
+                     date= rs.getString("date");
                      
                                  
                      %>            
@@ -130,10 +134,10 @@
                                 <tr>
                                     <td><%=i++ %></td>
                                     <td><%=pid %></td>
-                                    <td><%=p_name %></td>
+                                    <td><%=project_name %></td>
                                     <td><%=status %></td>
                                     <td><%=location %></td>
-                                    <td><%=year %></td>
+                                    <td><%=date %></td>
                                   
                                 </tr>
                      </tbody> 
@@ -189,5 +193,11 @@
             });
         });
     </script>
+    <% }else{
+
+      response.sendRedirect("Admin.jsp");
+   
+   }%>
+    
     </body>
 </html>

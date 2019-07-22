@@ -9,6 +9,7 @@
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
 <title>Straight Line</title>
 
 <style>
@@ -78,18 +79,7 @@ p.borderfotter{
                font-size: 18px;
                padding-left:10px;
                margin-left: 25px;
-               } 
-
-                #btn{
-                width: 210px;
-                height: 40px;
-                background-color:white ;
-                color: black;
-                font-size: 18px;
-                margin-left: 135px;
-                
-        
-                }   
+               }
                 
                 #top{
                 height: 180px;
@@ -108,6 +98,7 @@ p.borderfotter{
                  margin-right:30px; 
                  padding-top: 10px;
                  padding-bottom: 10px;
+                 box-shadow: 2px 2px 2px grey;
                  
                 }
                 
@@ -120,9 +111,104 @@ p.borderfotter{
                  margin-right:30px; 
                  padding-top: 10px;
                  padding-bottom: 15px;
-                     
+                 box-shadow: 2px 2px 2px grey;    
                     
                 }
+                
+.middle{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  text-align: center;
+}
+.btn{
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background: #f1f1f1;
+  margin: 10px;
+  border-radius: 30%;
+  box-shadow: 0 5px 15px -5px #00000070;
+  color: black;
+  overflow: hidden;
+  position: relative;
+}
+.btn i{
+  line-height: 40px;
+  font-size: 20px;
+  transition: 0.2s linear;
+  color: black;
+}
+.btn:hover i{
+  transform: scale(1.3);
+  color: #f1f1f1;
+}
+.btn::before{
+  content: "";
+  position: absolute;
+  width: 120%;
+  height: 120%;
+  background: black;
+  transform: rotate(45deg);
+  left: -110%;
+  top: 90%;
+}
+.btn:hover::before{
+  animation: aaa 0.7s 1;
+  top: -10%;
+  left: -10%;
+}
+@keyframes aaa {
+  0%{
+    left: -110%;
+    top: 90%;
+  }50%{
+    left: 10%;
+    top: -30%;
+  }100%{
+    top: -10%;
+    left: -10%;
+  }
+}
+
+.container{
+  position: absolute;
+  left:40%;
+  top:40%;
+  
+}
+
+.btn1{
+  border: none;
+  margin: 20px;
+  padding: 24px;
+  font-family: "montserrat",sans-serif;
+  text-transform: uppercase;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #f1f1f1;
+  background-size: 200%;
+  transition: 0.6s;
+  width: 210px;
+  height: 40px;
+  text-align: center;
+  line-height: 3px;
+  transform: translate(-50%,-50%);
+  text-align: center;
+                
+}
+
+
+.btn2{
+  background-image: linear-gradient(to left,#00838F,#4DD0E1,#00838F);
+}
+
+
+.btn1:hover{
+  background-position: right;
+}
+
 
 
 
@@ -130,7 +216,7 @@ p.borderfotter{
 </style>
 
     </head>
-   <body style="background-color:#BDBDBD">
+   <body style="background-color:whitesmoke ">
         <!--Navigation bar -->
         <div class="container-fluid" style="background-color: #343a40; position: relative; ">
         <div class="col-lg-12">
@@ -189,7 +275,7 @@ p.borderfotter{
         </div>
  
         
-        <div class="container-fluid" style="    background-color:#BDBDBD;
+        <div class="container-fluid" style="    background-color:whitesmoke;
     position: relative;
     top: -16px;
     max-height:800px;
@@ -201,13 +287,13 @@ p.borderfotter{
     padding-left:1%;">
        <div id="off_data" class="card" style="width: 28rem;height: 12rem">
   <div class="card-body">
-    <h5 class="card-title">Our Office</h5>
+      <h5 class="card-title" style=" color: #009688;">Our Office</h5>
    
     <p class="card-text">211,Princess Business Skyline,<br>
 
-A.B. Road Scheme No.54,
+    A.B. Road Scheme No.54,
 <br>
-Sheetal Nagar Indore,MP(452010)</p>
+    Sheetal Nagar Indore,MP(452010)</p>
     
   </div>
 </div>
@@ -220,7 +306,7 @@ Sheetal Nagar Indore,MP(452010)</p>
     padding-left:1%;">
        <div id="call_us" class="card" style="width: 28rem;height: 11rem">
   <div class="card-body">
-    <h5 class="card-title">Call Us</h5>
+    <h5 class="card-title" style=" color: #009688;">Call Us</h5>
     <p class="card-text">+91 95892 31112
         <br>
 +91 87188 16333
@@ -240,52 +326,69 @@ Sheetal Nagar Indore,MP(452010)</p>
     padding-bottom: 2%;">
        <div id="call_us" class="card" style="width: 28rem;">
   <div class="card-body">
-    <h5 class="card-title">Mail us</h5>
+    <h5 class="card-title" style=" color: #009688;">Mail us</h5>
     
     <p class="card-text">vaibhav@gmail.com</p>
     
   </div>
 </div>
 </div>
+                 <div class="col" style="width: 100%;
+    max-height:400px;
+    padding-left:1%;
+    padding-bottom: 2%;">
+       <div id="call_us" class="card" style="width: 28rem;">
+  <div class="card-body">
+    <h5 class="card-title" style=" color: #009688;">Follow us</h5>
+    <div class="middle">
+      <a class="btn" href="https://www.facebook.com">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a class="btn" href="https://www.google.com">
+        <i class="fab fa-google"></i>
+      </a>
+     
+    </div>
+    
+    
+  </div>
+</div>
+</div>
+          
+          
+          
 </div>        
    </div>
         
           
-                      
-          
-          
-          
-
-              
-              
-              
-              
-             
+                 
                                                
                                                
-          <div class="container-fluid" style="background-color: #BDBDBD">
+          <div class="container-fluid" style="background-color: whitesmoke">
     
-    <h1 id="heading">Submit Enquiry</h1><br>         
+    <h1 id="heading" style=" color: #009688; position: relative;left: 30px;">Submit Enquiry</h1><br>         
          <div  class="row">
              <div class="col" style="max-height: 700px;">     
 
              
-<form method="post">
+                 <form method="post" style="position: relative; top: -20px;left: 28px;">
         <input  id="inp" type="text" name="Name" placeholder="Enter Name"><br><br>
         <input id="inp" type="email" name="email" required placeholder="Enter Email"><br><br>
         <input id="inp" type="number" name="p_number" required placeholder="Enter Contact No."><br><br>
     
         <textarea id="txt_area" type="text" name="enq_txt" placeholder="Write Here"></textarea><br><br>
-        <input id="btn" type="submit" name="sub" value="Submit Enquiry">
+            
+        <div class="container" style="    position: relative;
+    left: 36%;">
+          
+              
+        <input class="btn1 btn2" type="submit" name="sub" value="Submit Enquiry"> 
+        
+            </div>
         </form>
         </div>
         
        
-    
-    
-    
-    
-    
     
       <%--               Map                  --%>
     
@@ -309,7 +412,7 @@ Sheetal Nagar Indore,MP(452010)</p>
                                <%--  Footer  --%>
 
  <div class="container-fluid"  style="position: relative;
-     top:-115px; ">
+     top:-86px; ">
  <div class="row"> 
         <div class="col" style="background-color: black;
     width: 100%;
@@ -365,7 +468,7 @@ Sheetal Nagar Indore,MP(452010)</p>
             <p><h6><i class="far fa-envelope"></i>&nbsp;Email:</h6></p> 
             <p>info@onessinfra.com</p>
 
-            <p>onessinfra@gmail.com</p>
+            <p class="borderfotter">onessinfra@gmail.com</p>
 
             
         </div>

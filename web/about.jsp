@@ -80,6 +80,22 @@ p.borderfotter{
 </nav> 
 </div>
         </div>
+        <!--Bread-scrumb -->
+        <div class="container-fluid" style="background-color:black;">
+            <div class="row" style="position: relative;
+    height: 200px;">
+            <h4 style="color: white;
+    position: relative;
+    top: 65px;
+    left: 115px;">ABOUT US </h4>
+            <p style="color: white;
+    position: relative;
+    top: 93px;
+    left: 0px;">Home/About us</p>
+        </div>
+        </div>
+
+        
                
 <!--  Footer  -->
 <div class="container-fluid">
@@ -138,7 +154,7 @@ p.borderfotter{
             <p><h6><i class="far fa-envelope"></i>&nbsp;Email:</h6></p> 
             <p>info@onessinfra.com</p>
 
-            <p>onessinfra@gmail.com</p>
+            <p class="borderfotter">onessinfra@gmail.com</p>
 
             
         </div>

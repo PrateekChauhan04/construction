@@ -37,7 +37,7 @@ p.borderfotter{
 }</style>
     </head>
     <body>
-        <%!String p_name,status,location,year;int pid; %>      
+        <%!String project_name,status,location,date;int pid; %>      
            <%
               
                
@@ -58,7 +58,7 @@ p.borderfotter{
                                     <th scope="col">Project Name</th>
                                     <th scope="col">Status</th>
                                     <th scope="col">location</th>
-                                    <th scope="col">year</th>
+                                    <th scope="col">date</th>
                                     
                                 </tr>
                               </thead>
@@ -67,20 +67,20 @@ p.borderfotter{
                       while(rs.next()){
                      
                      pid= rs.getInt("pid");
-                     p_name= rs.getString("projectname");
+                     project_name= rs.getString("project_name");
                      status= rs.getString("status");
                      location = rs.getString("location");
-                     year= rs.getString("year");
+                     date= rs.getString("date");
                                   
                      %>         
                      <tbody>
                                 <tr>
                                     <td><%=i++%></td>
                                     <td><%=pid %></td>
-                                    <td><%=p_name %></td>
+                                    <td><%=project_name %></td>
                                     <td><%=status %></td>
                                     <td><%=location %></td>
-                                    <td><%=year %></td>
+                                    <td><%=date %></td>
                                   
                                 </tr>
                      </tbody> 
