@@ -27,39 +27,43 @@
 
     </head>
     <body>
-        
+        <%
+            session=request.getSession();
+            String username=(String)session.getAttribute("username");
+            
+            if(!(username=="")){ %>
          <div class="container-fluid" style="padding-left: 2px;">
             <div class="wrapper">
         <!-- Sidebar Holder -->
         <nav id="sidebar">
             <div class="sidebar-header">
-                <h3>Bootstrap Sidebar</h3>
+                <h3>Straight Line</h3>
             </div>
 
             <ul class="list-unstyled components">
-                <p><h1>HELLO ADMIN</h1></p>
+                 <p><h3>Hello Admin</h3></p>
                 <li class="active">
-                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
+                    <a href="#homeSubmenu" style="text-decoration: none;"  data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
                     <ul class="collapse list-unstyled" id="homeSubmenu">
                         <li>
-                            <a style="color:#00c3ff" href="addprojects.jsp">ADD PROJECTS</a>
+                            <a style="color:#00c3ff;text-decoration: none;" href="addprojects.jsp">ADD PROJECTS</a>
                         </li>
                         
                         <li>
-                            <a style="color:#00c3ff" href="updateprojects.jsp">UPDATE PROJECTS</a>
+                            <a style="color:#00c3ff;text-decoration: none;" href="updateprojects.jsp">UPDATE PROJECTS</a>
                         </li>
                         <li>
-                            <a style="color:#00c3ff" href="deleteprojects.jsp">DELETE PROJECTS</a>
+                            <a style="color:#00c3ff;text-decoration: none;" href="deleteprojects.jsp">DELETE PROJECTS</a>
                         </li>
                         <li>
-                            <a style="color:#00c3ff" href="showprojects.jsp">SHOW PROJECTS</a>
+                            <a style="color:#00c3ff;text-decoration: none;" href="showprojects.jsp">SHOW PROJECTS</a>
                         </li>
                      
                         <li>
-                            <a style="color:#00c3ff" href="viewinquiry.jsp">VIEW INQURIES</a>
+                            <a style="color:#00c3ff;text-decoration: none;" href="viewinquiry.jsp">VIEW ENQUIRIES</a>
                         </li>
                         <li>
-                            <a style="color:#00c3ff" href="Admin.jsp">LOGOUT</a>
+                            <a href="logout.jsp" style="color:#00c3ff;text-decoration: none;" name="logout" href="Admin.jsp">LOGOUT</a>
                         </li>
                     </ul>
                 </li>
@@ -84,7 +88,7 @@
                     </div>
                 </div>
             </nav>
-        <%!String p_name,status,location,year;int pid; %>      
+        <%!String project_name,status,location,date;int pid; %>      
            <%
               
                
@@ -107,7 +111,7 @@
                                     <th scope="col">Project Name</th>
                                     <th scope="col">Status</th>
                                     <th scope="col">location</th>
-                                    <th scope="col">year</th>
+                                    <th scope="col">date</th>
                                     
                                 </tr>
                               </thead>
@@ -115,11 +119,11 @@
                       int i=1;
                       while(rs.next()){
                      
-                     pid= rs.getInt("sno");
-                     p_name= rs.getString("projectname");
+                     pid= rs.getInt("pid");
+                     project_name= rs.getString("project_name");
                      status= rs.getString("status");
                      location = rs.getString("location");
-                     year= rs.getString("year");
+                     date= rs.getString("date");
                      
                                  
                      %>            
@@ -130,10 +134,10 @@
                                 <tr>
                                     <td><%=i++ %></td>
                                     <td><%=pid %></td>
-                                    <td><%=p_name %></td>
+                                    <td><%=project_name %></td>
                                     <td><%=status %></td>
                                     <td><%=location %></td>
-                                    <td><%=year %></td>
+                                    <td><%=date %></td>
                                   
                                 </tr>
                      </tbody> 
@@ -189,5 +193,11 @@
             });
         });
     </script>
+    <% }else{
+
+      response.sendRedirect("Admin.jsp");
+   
+   }%>
+    
     </body>
 </html>

@@ -69,7 +69,7 @@ body {
           Projects
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="currentproject.jsp">Current Projects</a>
+          <a class="dropdown-item" href="currentproject.jsp" >Current Projects</a>
           <a class="dropdown-item" href="completeproject.jsp">Completed Projects</a>
         </div>
       </li>
@@ -192,7 +192,7 @@ body {
             <p><h6><i class="far fa-envelope"></i>&nbsp;Email:</h6></p> 
             <p>info@onessinfra.com</p>
 
-            <p>onessinfra@gmail.com</p>
+            <p class="borderfotter">onessinfra@gmail.com</p>
 
             
         </div>

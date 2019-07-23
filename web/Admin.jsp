@@ -107,6 +107,7 @@ Admin
         String name1=null;
         %>
         <%
+           
         if(request.getParameter("sub")!=null)
         {
          String email=request.getParameter("email");
@@ -120,7 +121,10 @@ Admin
                
                ResultSet rs=SqlUtil.read(query1);
                 if(rs.next())
-                {
+                {   
+                session=request.getSession();
+                session.setAttribute("username",email);
+                session.setMaxInactiveInterval(500000000);
                     response.sendRedirect("Admin_profile.jsp");
                 }else{
                 

@@ -25,38 +25,43 @@
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     </head>
     <body>
+        <%
+            session=request.getSession();
+            String username=(String)session.getAttribute("username");
+            
+            if(!(username=="")){ %>
         <div class="container-fluid" style="padding-left: 2px;">
             <div class="wrapper">
         <!-- Sidebar Holder -->
         <nav id="sidebar">
             <div class="sidebar-header">
-                <h3>Bootstrap Sidebar</h3>
+               <h3>Straight Line</h3>
             </div>
 
             <ul class="list-unstyled components">
-                <p><h1>HELLO ADMIN</h1></p>
+                <p><h3>Hello Admin</h3></p>
                 <li class="active">
-                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
+                    <a href="#homeSubmenu"  style="text-decoration: none;" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
                     <ul class="collapse list-unstyled" id="homeSubmenu">
                         <li>
-                            <a style="color:#00c3ff"href="addprojects.jsp">ADD PROJECTS</a>
+                            <a style="color:#00c3ff;text-decoration: none;"href="addprojects.jsp">ADD PROJECTS</a>
                         </li>
                         
                         <li>
-                            <a style="color:#00c3ff" href="updateprojects.jsp">UPDATE PROJECTS</a>
+                            <a style="color:#00c3ff;text-decoration: none;" href="updateprojects.jsp">UPDATE PROJECTS</a>
                         </li>
                         <li>
-                            <a style="color:#00c3ff" href="deleteprojects.jsp">DELETE PROJECTS</a>
+                            <a style="color:#00c3ff;text-decoration: none;" href="deleteprojects.jsp">DELETE PROJECTS</a>
                         </li>
                         <li>
-                            <a style="color:#00c3ff" href="showprojects.jsp">SHOW PROJECTS</a>
+                            <a style="color:#00c3ff;text-decoration: none;" href="showprojects.jsp">SHOW PROJECTS</a>
                         </li>
                        
                         <li>
-                            <a style="color:#00c3ff" href="viewinquiry.jsp">VIEW INQURIES</a>
+                            <a style="color:#00c3ff;text-decoration: none;" href="viewinquiry.jsp">VIEW ENQUIRIES</a>
                         </li>
                         <li>
-                            <a style="color:#00c3ff" href="Admin.jsp">LOGOUT</a>
+                            <a href="logout.jsp" style="color:#00c3ff;text-decoration: none;" name="logout" href="Admin.jsp">LOGOUT</a>
                         </li>
                     </ul>
                 </li>
@@ -177,15 +182,21 @@
 %>
 <script>
     
-    alert('project id alreadt inserted please insert other projectid');
+    alert('project id already inserted please insert other projectid');
     
 </script> 
 
 
          <%
-        System.out.println("erro in inserting");
+        System.out.println("error in inserting");
         }
         }
         %>
+        <% }else{
+
+      response.sendRedirect("Admin.jsp");
+   
+   }%>
+    
     </body>
 </html>
