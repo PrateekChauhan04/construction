@@ -40,6 +40,7 @@ p.borderfotter{
 body, html {
   height: 100%;
   margin: 0;
+  overflow-x: hidden;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -59,6 +60,7 @@ body, html {
   max-width: 100%;
   margin: 15px 0px;
   position: relative;
+  top:-15px;
     background-size: cover;
     background-attachment: fixed;
     background-repeat: repeat-y;
@@ -91,7 +93,7 @@ body, html {
     padding: 25px;
     margin: 30px 3px;
     height: 140px;
-    width: 260px;
+    
     border: 1px solid #3c3c3c;
     border-radius: 5px;
     color: #fff!important;
@@ -336,7 +338,7 @@ body, html {
         
 <!--  Footer  -->
 <div class="container-fluid" style="position: relative;
-     top:-127px; ">
+     top:-141px; ">
     <div class="row"> 
         <div class="col" style="background-color: black;
     width: 100%;
