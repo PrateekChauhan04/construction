@@ -69,7 +69,7 @@ body {
           Projects
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="currentproject.jsp">Current Projects</a>
+          <a class="dropdown-item" href="currentproject.jsp" >Current Projects</a>
           <a class="dropdown-item" href="completeproject.jsp">Completed Projects</a>
         </div>
       </li>

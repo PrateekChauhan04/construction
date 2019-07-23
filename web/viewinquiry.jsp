@@ -34,33 +34,33 @@
         <!-- Sidebar Holder -->
         <nav id="sidebar">
             <div class="sidebar-header">
-                <h3>Bootstrap Sidebar</h3>
+                 <h3>Straight Line</h3>
             </div>
 
             <ul class="list-unstyled components">
-                <p><h1>HELLO ADMIN</h1></p>
+                <p><h3>Hello Admin</h3></p>
                 <li class="active">
-                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
+                    <a href="#homeSubmenu" style="text-decoration: none;" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
                     <ul class="collapse list-unstyled" id="homeSubmenu">
                         <li>
-                            <a style="color:#00c3ff" href="addprojects.jsp">ADD PROJECTS</a>
+                            <a style="color:#00c3ff;text-decoration: none;" href="addprojects.jsp">ADD PROJECTS</a>
                         </li>
                         
                         <li>
-                            <a style="color:#00c3ff" href="updateprojects.jsp">UPDATE PROJECTS</a>
+                            <a style="color:#00c3ff;text-decoration: none;" href="updateprojects.jsp">UPDATE PROJECTS</a>
                         </li>
                         <li>
-                            <a style="color:#00c3ff" href="deleteprojects.jsp">DELETE PROJECTS</a>
+                            <a style="color:#00c3ff;text-decoration: none;" href="deleteprojects.jsp">DELETE PROJECTS</a>
                         </li>
                         <li>
-                            <a style="color:#00c3ff" href="showprojects.jsp">SHOW PROJECTS</a>
+                            <a style="color:#00c3ff;text-decoration: none;" href="showprojects.jsp">SHOW PROJECTS</a>
                         </li>
                      
                         <li>
-                            <a style="color:#00c3ff" href="viewinquiry.jsp">VIEW INQURIES</a>
+                            <a style="color:#00c3ff;text-decoration: none;" href="viewinquiry.jsp">VIEW ENQUIRIES</a>
                         </li>
                         <li>
-                            <a href="logout.jsp" style="color:#00c3ff" name="logout" href="Admin.jsp">LOGOUT</a>
+                            <a href="logout.jsp" style="color:#00c3ff;text-decoration: none;" name="logout" href="Admin.jsp">LOGOUT</a>
                         </li>
                     </ul>
                 </li>
