@@ -128,24 +128,29 @@ body, html {
     color: #fff;
     font-family: pt sans,sans-serif;
     margin: -15px 0px;
-    padding-left: 10%;
+    position: relative;
+    margin-inline-start: -2em;
+    margin-inline-end: -2em;
+    padding-left: 137px;
     line-height: 1.3;
-    padding-top: 50px;
+    margin-block-start: 1.5em;
+    margin-block-end: 0em;
 }
 .para1
 {
     color: #fff;
-    margin: 0 0 10px;
+    margin: 0px 0 10px;
     line-height: 1.6;
+    position: relative;
     font-size: 14px;
     text-align: justify;
     display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 5em;
     margin-inline-end: 0px;
     -webkit-font-smoothing: antialiased;
-    padding-left: 134px;
+    padding-left: 5px;
 }
 .heading2
 {
@@ -209,7 +214,7 @@ body, html {
             <div class="row">
             <article class="col-lg-12 article2">
                 <div>
-                    <h4 class="heading1">SERVICES</h4>
+                    <h2 class="heading1">SERVICES</h2>
                     <p class="para1">Home / Services</p>
                 </div>
             </article>
@@ -223,7 +228,7 @@ body, html {
             <div class="row">
             <div class="col-md-3">
                 <article class="article">
-                    <a style="text-decoration: none;" href="https://www.google.com/">
+                    <a style="text-decoration: none;" href="project_management.jsp">
                         <div class="icon">
                             <img src="hook.png">
                         </div>
@@ -236,7 +241,7 @@ body, html {
             </div>
             <div class="col-md-3">
                 <article class="article">
-                    <a  style="text-decoration: none;" href="https://www.google.com/">
+                    <a  style="text-decoration: none;" href="civil_services.jsp">
                         <div class="icon">
                             <img src="crane.png">
                         </div>
@@ -248,7 +253,7 @@ body, html {
             </div>
             <div class="col-md-3">
                 <article class="article">
-                    <a  style="text-decoration: none;" href="https://www.google.com/">
+                    <a  style="text-decoration: none;" href="architectural.jsp">
                         <div class="icon">
                             <img src="drill.jpg">
                         </div>
@@ -260,7 +265,7 @@ body, html {
             </div>
             <div class="col-md-3">
                 <article class="article">
-                    <a style="text-decoration:none;" href="https://www.google.com/">
+                    <a style="text-decoration:none;" href="consultation.jsp">
                         <div class="icon">
                             <img src="engineer.png">
                         </div>
@@ -273,7 +278,7 @@ body, html {
             
                 <div class="col-md-3">
                 <article class="article">
-                    <a  style="text-decoration: none;" href="https://www.google.com/">
+                    <a  style="text-decoration: none;" href="planner.jsp">
                         <div class="icon">
                             <img src="loader.png">
                         </div>
@@ -285,7 +290,7 @@ body, html {
             </div>
             <div class="col-md-3">
                 <article class="article">
-                    <a  style="text-decoration: none;" href="https://www.google.com/">
+                    <a  style="text-decoration: none;" href="structural_services.jsp">
                         <div class="icon">
                             <img src="pencil.jpg">
                         </div>
@@ -297,7 +302,7 @@ body, html {
             </div>
             <div class="col-md-3">
                 <article class="article">
-                    <a  style="text-decoration: none;" href="https://www.google.com/">
+                    <a  style="text-decoration: none;" href="designer.jsp">
                         <div class="icon">
                             <img src="vest.jpg">
                         </div>
@@ -309,7 +314,7 @@ body, html {
             </div>
             <div class="col-md-3">
                 <article class="article">
-                    <a  style="text-decoration: none;" href="https://www.google.com/">
+                    <a  style="text-decoration: none;" href="estimation.jsp">
                         <div class="icon">
                             <img src="screw.png">
                         </div>
