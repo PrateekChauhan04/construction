@@ -17,7 +17,7 @@ text-decoration: none;
 /* visited link */
 a:visited {
   text-decoration: none;
-    color: white;
+    color: slategray;
 }
 
 /* mouse over link */
@@ -31,10 +31,129 @@ p.borderfotter{
     border-bottom-color: white;
     border-width: 1px;
 }
-body {
-  background-image: url("blur1.jpg");
+body, html {
+  height: 100%;
+  margin: 0;
+  overflow-x: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-image {
+  /* Full height */
+  height: 50%; 
+  
+  /* Center and scale the image nicely */
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-position: 50% -59.4px;
+    background-size: cover;
+  height: 1000px;
+  max-width: 100%;
+  margin: 15px 0px;
+  position: relative;
+  top:-15px;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: repeat-y;
+    background-position: top center;
+}
+/* Images used */
+.img1 { background-image: url("interior3.jpg");
+
+}
+
+/* Position text in the middle of the page/image */
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  min-width: 90%;
+  padding: 20px;
+  text-align: center;
+}
+.article
+{
+    background: rgba(0,0,0,.9);
+    padding: 25px;
+    margin: 30px 3px;
+    height: 140px;
+    
+    border: 1px solid #3c3c3c;
+    border-radius: 5px;
+    color: #fff!important;
+    
+}
+.icon
+{
+    font-family: Stroke-Gap-Icons;
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    padding-right: 0px;
+    padding-top: 10px;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1; 
+    font-size: 30px;
+    -webkit-font-smoothing: antialiased;
+}
+.article2
+{
+    background: rgba(0,0,0,.9);
+    padding: 25px;
+    margin: 0px 3px;
+    height: 240px;
+    border: 1px solid #f7f4f4;
+    border-radius: 5px;
+    color: #fff!important;
+}
+.heading1
+{
+    color: #fff;
+    font-family: pt sans,sans-serif;
+    margin: -15px 0px;
+    padding-left: 10%;
+    line-height: 1.3;
+    padding-top: 50px;
+}
+.para1
+{
+    color: #fff;
+    margin: 0 0 10px;
+    line-height: 1.6;
+    font-size: 14px;
+    text-align: justify;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    -webkit-font-smoothing: antialiased;
+    padding-left: 134px;
+}
+.heading2
+{
+    color: #fff;
+    font-size: 12px;
+    text-transform: uppercase;
+    position: relative;
+    margin: 0;
+    padding-top: 10px;
+    margin-left: 0px;
+    font-weight: 500;
+    background: 0 0;
+    text-decoration: none;
+    line-height: 1.6em;
 }
 </style>
     </head>
@@ -61,6 +180,9 @@ body {
       <li class="nav-item">
         <a class="nav-link" href="ourservices.jsp">Our Services</a>
       </li>
+      <li class="nav-item">
+        <a class="nav-link" href="gallery.jsp">Gallery</a>
+       </li>
        <li class="nav-item">
         <a class="nav-link" href="ourvision.jsp">Our Vision</a>
       </li>
@@ -79,9 +201,7 @@ body {
        <li class="nav-item">
         <a class="nav-link" href="contact.jsp">Contact Us</a>
        </li>
-       <li class="nav-item">
-        <a class="nav-link" href="Admin.jsp">Admin Login</a>
-       </li>
+       
     </ul>      
   </div>
 </nav> 
@@ -94,8 +214,9 @@ body {
         
         
         <!-- Carousel -->
-        <div class="container" style="width: 65%;height: 70%; position: relative; top: 50px; left: center;">
+        <div class="container-fluid" style="width: 65%;height: 70%; position: relative; top: 50px; left: center;">
             <div class="row">
+                <div class="col">
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -127,7 +248,136 @@ body {
   </a>
 </div>
 </div>
+                
+                
+                
+                
+                
 </div>
+        </div>
+        
+        
+        
+        
+               <!--Our Services -->
+               
+               <section style="position: relative;top: 126px;" class="bg-image img1">
+         
+        <div class="bg-text col" >OUR . SERVICES . PLAN
+            <p style="font-size: 13px;
+    font-family: inherit;
+    text-align: center;">We Always look Forward to Providing nothing but the Best to our Clients. Here are a few things that we do Best</p>
+       
+
+            <div class="row">
+            <div class="col-md-3">
+                <article class="article">
+                    <a style="text-decoration: none;" href="https://www.google.com/">
+                        <div class="icon">
+                            <img src="hook.png">
+                        </div>
+                        <div>
+                            <h2 class="heading2">Project Management</h2>
+                        </div>
+                        </a>
+                    
+                </article>
+            </div>
+            <div class="col-md-3">
+                <article class="article">
+                    <a  style="text-decoration: none;" href="https://www.google.com/">
+                        <div class="icon">
+                            <img src="crane.png">
+                        </div>
+                        <div>
+                            <h2 class="heading2">Civil Constructions Services</h2>
+                        </div>
+                    </a>
+                </article>
+            </div>
+            <div class="col-md-3">
+                <article class="article">
+                    <a  style="text-decoration: none;" href="https://www.google.com/">
+                        <div class="icon">
+                            <img src="drill.jpg">
+                        </div>
+                        <div>
+                            <h2 class="heading2">Architectural Design</h2>
+                        </div>
+                    </a>
+                </article>
+            </div>
+            <div class="col-md-3">
+                <article class="article">
+                    <a style="text-decoration:none;" href="https://www.google.com/">
+                        <div class="icon">
+                            <img src="engineer.png">
+                        </div>
+                        <div>
+                            <h2 class="heading2">Consultation</h2>
+                        </div>
+                    </a>
+                </article>
+            </div>
+            
+                <div class="col-md-3">
+                <article class="article">
+                    <a  style="text-decoration: none;" href="https://www.google.com/">
+                        <div class="icon">
+                            <img src="loader.png">
+                        </div>
+                        <div>
+                            <h2 class="heading2">Planner</h2>
+                        </div>
+                    </a>
+                </article>
+            </div>
+            <div class="col-md-3">
+                <article class="article">
+                    <a  style="text-decoration: none;" href="https://www.google.com/">
+                        <div class="icon">
+                            <img src="pencil.jpg">
+                        </div>
+                        <div>
+                            <h2 class="heading2">Structural Drawing</h2>
+                        </div>
+                    </a>
+                </article>
+            </div>
+            <div class="col-md-3">
+                <article class="article">
+                    <a  style="text-decoration: none;" href="https://www.google.com/">
+                        <div class="icon">
+                            <img src="vest.jpg">
+                        </div>
+                        <div>
+                            <h2 class="heading2">Designer</h2>
+                        </div>
+                    </a>
+                </article>
+            </div>
+            <div class="col-md-3">
+                <article class="article">
+                    <a  style="text-decoration: none;" href="https://www.google.com/">
+                        <div class="icon">
+                            <img src="screw.png">
+                        </div>
+                        <div>
+                            <h2 class="heading2">Estimate costing & layout</h2>
+                        </div>
+                    </a>
+                </article>
+            </div>
+            </div>
+        </div>
+     
+            </section>
+                
+        
+        
+        
+        
+        
         
         
         
@@ -151,7 +401,7 @@ body {
         <p class="borderfotter"><a href="ourvision.jsp" target="_blank">>Our Vision</a></p>
         <p class="borderfotter"><a href="about.jsp" target="_blank">>About Us</a></p>
         <p class="borderfotter"><a href="contact.jsp" target="_blank">>Contact Us</a></p>
-        
+        <p class="borderfotter"><a href="Admin.jsp" target="_blank">>Admin Login</a></p>
         
         </div>
         <div class="col" style="background-color: black;

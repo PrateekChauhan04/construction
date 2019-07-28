@@ -74,8 +74,8 @@ Admin
        <li class="nav-item">
         <a class="nav-link" href="contact.jsp">Contact Us</a>
        </li>
-       <li class="nav-item">
-        <a class="nav-link" href="Admin.jsp">Admin Login</a>
+      <li class="nav-item">
+        <a class="nav-link" href="gallery.jsp">Gallery</a>
        </li>
     </ul>      
   </div>

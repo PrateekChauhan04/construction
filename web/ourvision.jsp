@@ -21,7 +21,7 @@ text-decoration: none;
 /* visited link */
 a:visited {
   text-decoration: none;
-    color: white;
+    color: grey;
 }
 
 /* mouse over link */
@@ -54,6 +54,9 @@ p.borderfotter{
       <li class="nav-item">
         <a class="nav-link" href="ourservices.jsp">Our Services </a>
       </li>
+      <li class="nav-item">
+        <a class="nav-link" href="gallery.jsp">Gallery</a>
+       </li>
        <li class="nav-item active">
         <a class="nav-link" href="ourvision.jsp">Our Vision<span class="sr-only">(current)</span></a>
       </li>
