@@ -4,7 +4,7 @@
 <html>
  <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Straight Line</title>
          <link rel="stylesheet" href="style5.css">
   <!-- Bootstrap CSS CDN -->
   <link rel="stylesheet" type="text/css" href="bootsrap.css">

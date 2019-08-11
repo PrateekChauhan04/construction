@@ -11,14 +11,16 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Straight Line</title>
          <link rel="stylesheet" href="style5.css">
   <!-- Bootstrap CSS CDN -->
   <link rel="stylesheet" type="text/css" href="bootstrap.css">
 <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
       <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     </head>
     <body>
@@ -133,19 +135,49 @@
                     }
                 
              %>
-             <div>
-                 <form>
-                     <input type="text" name="p_name" value="<%=project_name%>" placeholder="projectname">
-                     <br>
-                     <input type="text" name="status" value="<%=status%>" placeholder="status">
-                     <br>
-                     <input type="text" name="loc" value="<%=location%>" placeholder="location">
-                     <br>
-                     <input type="date" name="date" value="<%=date%>" placeholder="date">
-                     <br>
-                     <input type="submit" name="update" value="update">
-                 </form>
-             </div>
+              <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <div class="title text-center mb-5">
+                    <h1 class="h2">UPDATE PROJECTS</h1>
+                </div>
+                <div class="form-area">
+                    <form id="myform">
+                        
+                        <div class="form-group">
+                            <label for="name">Project Name</label>
+                            <input type="text" name="p_name" class="form-control" id="name">
+                        </div>
+                        <br>
+                         <div class="form-group">
+                                    <select class="form-control" name="status">
+                                        
+                                        <option value="completed">Completed</option>
+                                        <option value="current">Current</option>
+                                                                          </select>
+                                </div>
+                    
+                        <br>
+                           <div class="form-group">
+                            <label for="message">Location</label>
+                            <textarea  id="message" rows="3" class="form-control" name="loc"></textarea>
+                        </div>
+                     
+                        
+                        <div class="form-group">
+                            <label for="surname">Year</label>
+                            <input type="date"  class="form-control" id="surname" name="date">
+                        </div>
+                        
+                        
+                        
+                        <input class="btn btn-success btn-block" type="submit" name="update" value="update"></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+            
                      <%  
                      }
                          System.out.println("update");
@@ -161,7 +193,7 @@
                     
                     
                 SqlUtil.connectDb();
-                SqlUtil.Updatetable("update projects set project_name='"+project_name+"',status='"+status+"',location='"+location+"',date='"+date+"' where pid="+sno+"");
+                SqlUtil.Updatetable("update projects set projectname='"+project_name+"',status='"+status+"',location='"+location+"',year='"+date+"' where pid="+sno+"");
 %>
             <script>alert("Updated uccessfully");</script>
             

@@ -11,7 +11,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Straight Line</title>
                 <link rel="stylesheet" href="style5.css">
   <!-- Bootstrap CSS CDN -->
   <link rel="stylesheet" type="text/css" href="bootstrap.css">
@@ -120,10 +120,10 @@
                       while(rs.next()){
                      
                      pid= rs.getInt("pid");
-                     project_name= rs.getString("project_name");
+                     project_name= rs.getString("projectname");
                      status= rs.getString("status");
                      location = rs.getString("location");
-                     date= rs.getString("date");
+                     date= rs.getString("year");
                      
                                  
                      %>            

@@ -9,7 +9,7 @@ Admin
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title> Admin pr  </title>
+        <title> Straight Line</title>
         <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
         <style>
             
